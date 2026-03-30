@@ -355,7 +355,7 @@ export default function Navbar() {
                     </Popover>
                 </PopoverGroup>
 
-                <Link href="/aboutus" className="relative group inline-block">
+                <Link href="/about" className="relative group inline-block">
                     <button className={`${manrope.className} ml-6 hover:text-blue-200 font-normal text-white transition-all duration-300 cursor-pointer relative flex items-center gap-x-1 text-[18px]`}>
                         About Us
 
@@ -489,7 +489,7 @@ export default function Navbar() {
                             </div>
                             <div className="py-6">
                                 <Link
-                                    href="/aboutus"
+                                    href="/about"
                                     className="bg-blue-600 text-white px-8 py-2 rounded-lg font-medium hover:bg-blue-700 transition"
                                 >
                                     About Us

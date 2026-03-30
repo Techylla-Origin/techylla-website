@@ -12,7 +12,7 @@ const manrope = Manrope({
 });
 
 
-const WhatWeDo = () => {
+const Careers = () => {
 
     const [fileName, setFileName] = useState("No file chosen");
 
@@ -421,4 +421,4 @@ const WhatWeDo = () => {
     )
 }
 
-export default WhatWeDo;
+export default Careers;

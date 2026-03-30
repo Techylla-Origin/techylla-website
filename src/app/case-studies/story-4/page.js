@@ -9,7 +9,7 @@ const manrope = Manrope({
 });
 
 
-export default function StoryOne() {
+export default function StoryFour() {
     return (
         <section className="relative bg-gradient-to-r from-blue-100 via-white to-blue-100 w-full overflow-hidden">
             <img
