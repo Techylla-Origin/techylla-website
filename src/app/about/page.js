@@ -443,7 +443,7 @@ const AboutUs = () => {
                                 className="inline-flex font-semibold items-center gap-2 bg-blue-500 px-6 py-1.5 rounded-full text-md hover:bg-blue-500 transition-all duration-700 shadow-[0_10px_50px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_50px_rgba(147,197,253,0.4)] hover:-translate-y-2"
                             >
                                 <img
-                                    src="/Linkedin Logo.png"
+                                    src="/Linkedin-logo.png"
                                     className="w-6 h-6 object-cover"
                                 />
                                 Profile
@@ -473,7 +473,7 @@ const AboutUs = () => {
                                 className="inline-flex font-semibold items-center gap-2 bg-blue-500 px-6 py-1.5 rounded-full text-md hover:bg-blue-500 transition-all duration-700 shadow-[0_10px_50px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_50px_rgba(147,197,253,0.4)] hover:-translate-y-2"
                             >
                                 <img
-                                    src="/Linkedin Logo.png"
+                                    src="/Linkedin-logo.png"
                                     className="w-6 h-6 object-cover"
                                 />
                                 Profile
@@ -503,7 +503,7 @@ const AboutUs = () => {
                                 className="inline-flex font-semibold items-center gap-2 bg-blue-500 px-6 py-1.5 rounded-full text-md hover:bg-blue-500 transition-all duration-700 shadow-[0_10px_50px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_50px_rgba(147,197,253,0.4)] hover:-translate-y-2"
                             >
                                 <img
-                                    src="/Linkedin Logo.png"
+                                    src="/Linkedin-logo.png"
                                     className="w-6 h-6 object-cover"
                                 />
                                 Profile
@@ -533,7 +533,7 @@ const AboutUs = () => {
                                 className="inline-flex font-semibold items-center gap-2 bg-blue-500 px-6 py-1.5 rounded-full text-md hover:bg-blue-500 transition-all duration-700 shadow-[0_10px_50px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_50px_rgba(147,197,253,0.4)] hover:-translate-y-2"
                             >
                                 <img
-                                    src="/Linkedin Logo.png"
+                                    src="/Linkedin-logo.png"
                                     className="w-6 h-6 object-cover"
                                 />
                                 Profile
