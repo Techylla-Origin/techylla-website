@@ -79,9 +79,9 @@ const serviceSolution = [
 ];
 
 const industry = [
-    { name: 'Healthcare & LifeSciences', description: 'Transforming care through technology', href: '#', icon: ClipboardDocumentCheckIcon },
+    { name: 'Healthcare & LifeSciences', description: 'Transforming care through technology', href: '/industry/healthcare-and-lifesciences', icon: ClipboardDocumentCheckIcon },
     { name: 'Supply Chain & Logistics', description: 'Seamless global supply chain solutions', href: '#', icon: GlobeAltIcon },
-    { name: 'Manufacturing', description: 'Smart and efficient manufacturing', href: '#', icon: Cog6ToothIcon },
+    { name: 'Manufacturing', description: 'Smart and efficient manufacturing', href: '/industry/manufacturing', icon: Cog6ToothIcon },
     { name: 'HiTech', description: 'Advanced software and technology systems', href: '#', icon: CloudArrowUpIcon },
 ]
 

@@ -148,9 +148,9 @@ export default function Footer() {
                         <div className="ml-0 md:-ml-4">
                             <h3 className="text-xl font-normal text-orange-400 mb-4">Industry</h3>
                             <div className="space-y-4 text-white mt-6">
-                                <Link href="/healthcare" className="text-l font-normal block hover:text-orange-400 transition">Healthcare & LifeSciences</Link>
+                                <Link href="/industry/healthcare-and-lifesciences" className="text-l font-normal block hover:text-orange-400 transition">Healthcare & LifeSciences</Link>
                                 <Link href="/financial-services" className="text-l font-normal block hover:text-orange-400 transition">Supply Chain & Logistics</Link>
-                                <Link href="/manufacturing" className="text-l font-normal block hover:text-orange-400 transition">Manufacturing</Link>
+                                <Link href="/industry/manufacturing" className="text-l font-normal block hover:text-orange-400 transition">Manufacturing</Link>
                                 <Link href="/hitech" className="text-l font-normal block hover:text-orange-400 transition">HiTech</Link>
                             </div>
                         </div>
