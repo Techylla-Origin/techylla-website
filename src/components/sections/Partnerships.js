@@ -23,7 +23,7 @@ const partners = [
   { name: "Power BI", logo: "/powerbi.png", width: "w-45", height: "h-30" },
 ];
 
-const Partnerships = () => {
+const CoreCompetence = () => {
   return (
     <section className="min-h-screen bg-blue-100 md:py-20 py-10 overflow-hidden">
 
@@ -69,4 +69,4 @@ const Partnerships = () => {
   );
 };
 
-export default Partnerships;
+export default CoreCompetence;

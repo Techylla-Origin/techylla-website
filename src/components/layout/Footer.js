@@ -11,199 +11,191 @@ const manrope = Manrope({
 import { Urbanist } from 'next/font/google'
 
 const urbanist = Urbanist({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+    subsets: ['latin'],
+    weight: ['300', '400', '500', '600', '700'],
 })
 
 export default function Footer() {
     return (
-        <footer className="bg-black text-white px-10 min-h-screen">
+        <footer className="bg-black/90 text-white min-h-screen">
 
-            {/* TOP SECTION */}
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className="max-w-7xl mx-auto px-6">
 
-                {/* LEFT SIDE */}
-                <div className="mt-10 ml-0 md:mt-15 md:ml-25">
-                    <h2 className={`${urbanist.className} text-7xl font-semibold tracking-tight leading-tight mb-10`}>
-                        Think Data <br />
-                        Think <span className="text-blue-400 font-semibold">Techylla</span>
-                    </h2>
+                {/* TOP SECTION */}
+                <div className="grid md:grid-cols-2 gap-12">
 
-                    {/* ✅ LOGO HERE */}
-
-                    <Link href="/">
-                        <img
-                            src="/Techylla-Logo.png"
-                            alt="Techylla Logo"
-                            className="w-70 -ml-3 mb-8 mt-30 cursor-pointer"
-                        />
-                    </Link>
-
-                    <div className={`${urbanist.className} grid grid-cols-2 gap-y-2 gap-x-4 md:gap-x-0 text-sm text-gray-200 mt-6 -mb-8 ml-2`}>
-
-                        {/* INDIA */}
-                        <p className="font-semibold text-white">India Office:</p>
-                        <div></div>
-
-                        <p>Kolkata, India</p>
-                        <div></div>
-
-                        {/* SPACE */}
-                        <div className="col-span-2 h-4"></div>
-
-                        {/* US + CONTACT */}
-                        <p className="text-l font-semibold text-white">US Office:</p>
-                        <p className="-ml-5 md:-ml-10">Tel: +1 (732) 208-4788 (US)</p>
-
-                        <p>116 Village Blvd Suite 200</p>
-                        <p className="-ml-5 md:-ml-10">Tel: +91 98311 69927 (IN)</p>
-
-                        <p>Princeton, NJ 08540</p>
-                        <a href="mailto:sales@techylla.com" className="hover:underline -ml-5 md:-ml-10">
-                            Email: sales@techylla.com
-                        </a>
-
-                    </div>
-                </div>
-
-                {/* RIGHT SIDE */}
-                <div className={`${urbanist.className} font-semibold text-white mb-3 flex flex-col gap-16 text-sm mt-10 ml-0 md:mt-20 md:-ml-18`}>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
-
-                        {/* Data & Cloud */}
-                        <div>
-                            <h3 className="text-xl whitespace-nowrap text-orange-400 font-normal mb-4 -mt-0.5">Services & Solutions</h3>
-
-                            <div className="space-y-4">
-                                <Link href="/services/data-cloud" className="text-l block font-normal text-orange-300 hover:text-orange-400 transition mt-5">
-                                    Data & Cloud
-                                </Link>
-
-                                <div>
-                                    <Link href="/data-ai" className="text-l font-normal block text-white mb-2 hover:text-orange-400 transition">
-                                        Data Engineering
-                                    </Link>
-
-                                </div>
-
-                                <div>
-                                    <Link href="/cloud-studio" className="text-l font-normal block text-white mb-2 hover:text-orange-400 transition">
-                                        Data Management
-                                    </Link>
-
-                                </div>
-
-
-                                <Link href="/application-modernization" className="text-l font-normal block text-orange-300 mb-2 hover:text-orange-400 transition">
-                                    Business Transformation
-                                </Link>
-
-
-                            </div>
-                        </div>
-
-                        {/* Business Transformation */}
-                        <div className="ml-0 md:-ml-5">
-
-                            <div className="space-y-4">
-                                
-
-                                <Link href="/services/artificial-intelligence" className="text-l font-normal block text-orange-300 hover:text-orange-400 transition mt-12">
-                                    Artificial Intelligence
-                                </Link>
-
-                                <div>
-                                    <Link href="/data-ai" className="text-l font-normal block text-white mb-2 hover:text-orange-400 transition">
-                                        Generative AI
-                                    </Link>
-
-                                </div>
-
-                                <div>
-                                    <Link href="/cloud-studio" className="text-l font-normal block text-white mb-2 hover:text-orange-400 transition">
-                                        AI Managed Services
-                                    </Link>
-
-                                </div>
-
-
-
-
-                            </div>
-                        </div>
-
-                        {/* Artificial Intelligence */}
-                        <div className="ml-0 md:-ml-8">
-                            <h3 className="text-xl font-normal text-orange-400 mb-4">Knowledge Center</h3>
-
-                            <div className="space-y-4">
-                                <Link href="/case-studies" className="text-l font-normal block text-white hover:text-orange-400 transition mt-5.5">
-                                    Case Studies
-                                </Link>
-
-                                <div>
-                                    <Link href="/data-ai" className="text-l font-normal block text-white mb-2 hover:text-orange-400 transition">
-                                        Blogs
-                                    </Link>
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                        {/* INDUSTRY */}
-                        <div className="ml-0 md:-ml-4">
-                            <h3 className="text-xl font-normal text-orange-400 mb-4">Industry</h3>
-                            <div className="space-y-4 text-white mt-6">
-                                <Link href="/industry/healthcare-and-lifesciences" className="text-l font-normal block hover:text-orange-400 transition">Healthcare & LifeSciences</Link>
-                                <Link href="/financial-services" className="text-l font-normal block hover:text-orange-400 transition">Supply Chain & Logistics</Link>
-                                <Link href="/industry/manufacturing" className="text-l font-normal block hover:text-orange-400 transition">Manufacturing</Link>
-                                <Link href="/hitech" className="text-l font-normal block hover:text-orange-400 transition">HiTech</Link>
-                            </div>
-                        </div>
-                        {/* INDUSTRY */}
-                        <div>
-                            <div className="space-y-2 text-gray-300 mb-6 mt-6 ">
-                                <Link href="/about" className="text-xl font-normal block text-orange-400 hover:text-white">About Us</Link>
-
-                            </div>
-                        </div>
-                        <div className="flex items-start mt-6 ml-0 md:-ml-5">
-                            <Link href="/careers" className="text-xl font-normal text-orange-400 hover:text-white">
-                                Careers
+                    {/* LEFT SIDE */}
+                    <div className={`${urbanist.className} mt-10 md:mt-15`}>
+                        <h2 className={`${urbanist.className} text-7xl font-medium tracking-tight leading-tight mb-10`}>
+                            Think Data <br />
+                            Think{" "}
+                            <Link href="/">
+                                <img
+                                    src="/SampleLogo.png"
+                                    alt="Techylla Logo"
+                                    className="w-70 inline-block align-middle"
+                                />
                             </Link>
-                        </div>
-                        {/* Contact */}
-                        <div className="flex items-start mt-6 ml-0 md:-ml-8">
-                            <Link href="/contact" className="text-xl font-normal text-orange-400 hover:text-white">
-                                Contact Us
-                            </Link>
-                        </div>
-                        {/* Connect */}
-                        <div className="mt-6 ml-0 md:-ml-4">
-                            <p className="text-xl font-normal text-orange-400">
+                        </h2>
+
+                        {/* ✅ LOGO HERE */}
+
+                        <div className="mt-20 pl-2">
+                            <p className="text-xl font-semibold bg-gradient-to-b from-blue-500 via-blue-300 to-blue-200 bg-clip-text text-transparent mb-3">
                                 Connect with us on
                             </p>
 
                             <Link href="https://www.linkedin.com/company/techylla/" target="_blank">
                                 <img
-                                    src="/linkedin.png"   // 👈 put your image in public folder
+                                    src="/linkedin.png"
                                     alt="LinkedIn"
-                                    className="md:w-45 md:h-29 cursor-pointer hover:opacity-80 -mt-8 md:-ml-4 -ml-3.5"
+                                    className="w-36 md:w-40 cursor-pointer hover:opacity-80 transition"
                                 />
                             </Link>
                         </div>
+
+                        <div className={`${urbanist.className} grid grid-cols-2 gap-y-2 gap-x-4 md:gap-x-0 text-sm text-gray-200 mt-6 -mb-8 ml-2`}>
+
+                            {/* INDIA */}
+                            {/* <p className="font-semibold text-white">India Office:</p>
+                        <div></div>
+
+                        <p>Kolkata, India</p>
+                        <div></div> */}
+
+                            {/* SPACE */}
+                            {/* <div className="col-span-2 h-4"></div> */}
+
+                            {/* US + CONTACT */}
+                            <p className="text-l font-semibold text-white">US Office:</p>
+                            <div></div>
+
+                            <p>116 Village Blvd Suite 200</p>
+                            <div></div>
+                            {/* <p className="-ml-5 md:-ml-10">Tel: +91 98311 69927 (IN)</p> */}
+
+                            <p>Princeton, NJ 08540</p>
+                            <div></div>
+                            {/* <a href="mailto:sales@techylla.com" className="hover:underline -ml-5 md:-ml-10">
+                            Email: sales@techylla.com
+                        </a> */}
+
+                            {/* <div className="col-span-2 h-4"></div> */}
+
+                            <div></div>
+                            <p className="-ml-5 md:-ml-10">Tel: +1 (732) 208-4788 (US)</p>
+
+
+
+                            <p className="font-semibold text-white">India Office:</p>
+                            <p className="-ml-5 md:-ml-10">Tel: +91 98311 69927 (IN)</p>
+
+                            <p>Kolkata, India</p>
+                            <a href="mailto:sales@techylla.com" className="hover:underline -ml-5 md:-ml-10">
+                                Email: sales@techylla.com
+                            </a>
+
+                        </div>
                     </div>
 
-                    
+                    {/* RIGHT SIDE */}
+                    <div className={`${urbanist.className} text-white text-sm mt-10 md:mt-20 md:-ml-20`}>
+
+                        {/* TOP GRID (3 COLUMNS) */}
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
+
+                            {/* Services */}
+                            <div>
+                                <h3 className="text-xl font-semibold bg-gradient-to-b from-blue-500 via-blue-300 to-blue-200 bg-clip-text text-transparent mb-4">Services & Solutions</h3>
+                                <div className="space-y-3">
+                                    <Link href="/services/data-cloud" className="block hover:text-blue-300 transition">
+                                        Data & Cloud
+                                    </Link>
+                                    <Link href="/services/business-transformation" className="block hover:text-blue-300 transition">
+                                        Business Transformation
+                                    </Link>
+                                    <Link href="/services/artificial-intelligence" className="block hover:text-blue-300 transition">
+                                        Artificial Intelligence
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* Knowledge Center */}
+                            <div>
+                                <h3 className="text-xl font-semibold bg-gradient-to-b from-blue-500 via-blue-300 to-blue-200 bg-clip-text text-transparent mb-4">Knowledge Center</h3>
+                                <div className="space-y-3">
+                                    <Link href="/case-studies" className="block hover:text-blue-300 transition">
+                                        Case Studies
+                                    </Link>
+                                    <Link href="/data-ai" className="block hover:text-blue-300 transition">
+                                        Blogs
+                                    </Link>
+                                </div>
+                            </div>
+
+                            {/* Industry */}
+                            <div>
+                                <h3 className="text-xl font-semibold bg-gradient-to-b from-blue-500 via-blue-300 to-blue-200 bg-clip-text text-transparent mb-4">Industry</h3>
+                                <div className="space-y-3">
+                                    <Link href="/industry/healthcare-and-lifesciences" className="block hover:text-blue-300 transition">
+                                        Healthcare & LifeSciences
+                                    </Link>
+                                    <Link href="/industry/supplychain-and-logistics" className="block hover:text-blue-300 transition">
+                                        Supply Chain & Logistics
+                                    </Link>
+                                    <Link href="/industry/manufacturing" className="block hover:text-blue-300 transition">
+                                        Manufacturing
+                                    </Link>
+                                    <Link href="/hitech" className="block hover:text-blue-300 transition">
+                                        HiTech
+                                    </Link>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        {/* BOTTOM GRID (LINKS + SOCIAL) */}
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-10 mt-5">
+
+                            <Link href="/about" className="text-xl font-semibold bg-gradient-to-b from-blue-500 via-blue-300 to-blue-200 bg-clip-text text-transparent hover:text-white transition">
+                                About Us
+                            </Link>
+
+                            <Link href="/careers" className="text-xl font-semibold bg-gradient-to-b from-blue-500 via-blue-300 to-blue-200 bg-clip-text text-transparent hover:text-white transition">
+                                Careers
+                            </Link>
+
+                            <Link href="/contact" className="text-xl font-semibold bg-gradient-to-b from-blue-500 via-blue-300 to-blue-200 bg-clip-text text-transparent hover:text-white transition">
+                                Contact Us
+                            </Link>
+
+                            {/* <div>
+                            <p className="text-xl text-orange-400">
+                                Connect with us on
+                            </p>
+
+                            <Link href="https://www.linkedin.com/company/techylla/" target="_blank">
+                                <img
+                                    src="/linkedin.png"
+                                    alt="LinkedIn"
+                                    className="w-40 cursor-pointer hover:opacity-80"
+                                />
+                            </Link>
+                        </div> */}
+
+                        </div>
+
+                    </div>
+                    {/* BOTTOM */}
 
 
                 </div>
-                {/* BOTTOM */}
 
-                <div className={`${urbanist.className} relative pt-6 flex flex-col justify-between text-sm text-gray-200 ml-0 md:ml-15 before:content-[''] before:absolute before:top-0 before:left-0 before:-translate-x-1.5 before:w-[300] md:before:w-[1320] before:border-t before:border-white/20`}>
+                <div className={`${urbanist.className} mt-12 w-[99%] max-w-[1320px] mx-auto`}>
 
-                    <p className="-mt-2 md:tracking-wide">
+                    <div className="border-t border-white/20"></div>
+
+                    <p className="mt-4 text-sm text-gray-200 text-left">
                         Copyright © 2026 Techylla. All rights reserved.
                     </p>
 

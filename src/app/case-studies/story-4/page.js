@@ -130,7 +130,7 @@ export default function StoryFour() {
                 <h2 className={`${urbanist.className} md:text-3xl text-xl mb-3 font-semibold mt-9`}>Solution</h2>
 
                 <p className={`${urbanist.className} md:text-lg text-sm text-gray-700 mb-8`}>
-                    The Techylla team developed an <span className="text-gray-900 font-semibold"> AI-powered Intelligent Quality Ecosystem (Project Dolphin) </span> and implemented the following key initiatives:
+                    The Techylla team developed an <span className="text-gray-900 font-semibold"> AI-powered Intelligent Quality Ecosystem </span> and implemented the following key initiatives:
                     <br />
                     <br />
                     <span className="w-4 h-3 text-black text-2xl mb-0.5 inline-block mr-3">▸</span>

@@ -51,7 +51,7 @@ const steps = [
 
 export default function AIDeliveryLifecycle() {
   return (
-    <section className={`${urbanist.className} relative px-6 md:px-10 py-10 bg-blue-300/50 text-black`}>
+    <section className={`${urbanist.className} relative px-6 md:px-10 py-10 bg-blue-300/50 text-black overflow-hidden`}>
 
       <img src="/Bg Network Pattern.png" className="absolute -top-40 -left-40 w-[400] opacity-20 pointer-events-none" />
       <img src="/Bg Network Pattern.png" className="absolute -bottom-40 -right-40 w-[500] opacity-20 pointer-events-none" />
@@ -59,7 +59,7 @@ export default function AIDeliveryLifecycle() {
       {/* Heading */}
       <div className="max-w-6xl mx-auto mb-12">
         <h2 className="text-5xl md:text-6xl font-light">
-          AI Delivery Lifecycle
+          Agentic AI Delivery Lifecycle
         </h2>
         <p className="text-gray-700 text-xl mt-3 max-w-2xl">
           A structured approach to delivering scalable AI solutions.

@@ -192,7 +192,7 @@ const AboutUs = () => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className={`${urbanist.className} text-6xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-1 md:mb-4 mt-60 md:mt-60`}
                     >
-                        About <span className="text-blue-300 font-semibold">Techylla</span>
+                        About <span className="bg-gradient-to-b from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent font-semibold">Techylla</span>
                     </motion.h2>
 
                     <motion.h2
@@ -253,7 +253,7 @@ const AboutUs = () => {
                             className={`${urbanist.className} relative inline-flex items-center gap-2 font-semibold text-blue-900 group`}
                         >
                             Meet Our Leadership
-                            <span className="text-orange-500 text-xl transition-transform group-hover:translate-x-1">
+                            <span className="text-blue-500 text-xl transition-transform group-hover:translate-x-1">
                                 ➜
                             </span>
                             <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-blue-900 transition-all duration-300 ease-out group-hover:w-full"></span>
@@ -263,7 +263,7 @@ const AboutUs = () => {
                 </div>
             </section>
 
-            <section className="w-full py-15 bg-gradient-to-r from-blue-100 to-pink-100">
+            <section className="w-full py-15 bg-gradient-to-r from-blue-100 to-white/50">
                 <div className="max-w-7xl ml-0 md:ml-50 grid md:grid-cols-2 gap-16 px-6 md:px-16 items-center">
 
                     {/* VISION */}
@@ -305,7 +305,7 @@ const AboutUs = () => {
                 </div>
             </section >
 
-            <section className="bg-gradient-to-r from-pink-300 to-blue-300 py-10 px-4 md:px-70 text-center">
+            <section className="bg-gradient-to-r from-white/50 to-blue-300 py-10 px-4 md:px-70 text-center">
 
                 <motion.h2
                     initial={{ opacity: 0, y: 40 }}

@@ -11,7 +11,7 @@ export const Card = forwardRef(({ customClass, ...rest }, ref) => (
   <div
     ref={ref}
     {...rest}
-    className={`absolute top-1/2 left-1/2 rounded-xl border border-white bg-black [transform-3d] [will-change-transform] [backface-hidden] ${customClass ?? ''} ${rest.className ?? ''}`.trim()} />
+    className={`absolute top-1/2 left-1/2 rounded-xl border border-white bg-black cursor-pointer [transform-3d] [will-change-transform] [backface-hidden] ${customClass ?? ''} ${rest.className ?? ''}`.trim()} />
 ));
 Card.displayName = 'Card';
 
@@ -91,45 +91,27 @@ const CardSwap = ({
       if (order.current.length < 2) return;
 
       const [front, ...rest] = order.current;
-      const elFront = refs[front].current;
-      const tl = gsap.timeline();
-      tlRef.current = tl;
+      const newOrder = [...rest, front];
+      order.current = newOrder;
 
-      tl.to(elFront, {
-        y: '+=320',
-        duration: config.durDrop,
-        ease: config.ease
-      });
+      const total = refs.length;
 
-      tl.addLabel('promote', `-=${config.durDrop * config.promoteOverlap}`);
-      rest.forEach((idx, i) => {
+      newOrder.forEach((idx, pos) => {
         const el = refs[idx].current;
-        const slot = makeSlot(i, cardDistance, verticalDistance, refs.length);
-        tl.set(el, { zIndex: slot.zIndex }, 'promote');
-        tl.to(el, {
+        const slot = makeSlot(pos, cardDistance, verticalDistance, total);
+
+        gsap.killTweensOf(el);
+
+        gsap.to(el, {
           x: slot.x,
           y: slot.y,
           z: slot.z,
-          duration: config.durMove,
-          ease: config.ease
-        }, `promote+=${i * 0.15}`);
-      });
-
-      const backSlot = makeSlot(refs.length - 1, cardDistance, verticalDistance, refs.length);
-      tl.addLabel('return', `promote+=${config.durMove * config.returnDelay}`);
-      tl.call(() => {
-        gsap.set(elFront, { zIndex: backSlot.zIndex });
-      }, undefined, 'return');
-      tl.to(elFront, {
-        x: backSlot.x,
-        y: backSlot.y,
-        z: backSlot.z,
-        duration: config.durReturn,
-        ease: config.ease
-      }, 'return');
-
-      tl.call(() => {
-        order.current = [...rest, front];
+          xPercent: -50,
+          yPercent: -50,
+          zIndex: slot.zIndex,
+          duration: 0.6,
+          ease: "power1.out"
+        });
       });
     };
 
@@ -164,8 +146,45 @@ const CardSwap = ({
         key: i,
         ref: refs[i],
         style: { width, height, ...(child.props.style ?? {}) },
+        // onClick: e => {
+        //   child.props.onClick?.(e);
+        //   onCardClick?.(i);
+        // }
         onClick: e => {
           child.props.onClick?.(e);
+
+          tlRef.current?.kill();
+          clearInterval(intervalRef.current);
+
+          // 🔥 MOVE CLICKED CARD TO FRONT
+          const currentOrder = order.current;
+          const newOrder = [
+            i,
+            ...currentOrder.filter(idx => idx !== i)
+          ];
+
+          order.current = newOrder;
+
+          // 🔥 animate to new positions
+          const total = refs.length;
+          newOrder.forEach((idx, pos) => {
+            const el = refs[idx].current;
+            const slot = makeSlot(pos, cardDistance, verticalDistance, total);
+
+            gsap.killTweensOf(el);
+
+            gsap.to(el, {
+              x: slot.x,
+              y: slot.y,
+              z: slot.z,
+              xPercent: -50,
+              yPercent: -50,
+              zIndex: slot.zIndex,
+              duration: 0.5,
+              ease: "power1.out"
+            });
+          });
+
           onCardClick?.(i);
         }
       })

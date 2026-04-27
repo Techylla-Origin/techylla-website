@@ -114,7 +114,7 @@ export default function SuccessStories() {
                                             {/* Content */}
                                             <div className="text-white max-w-[65%]">
 
-                                                <p className="font-light tracking-normal text-lg leading-snug">
+                                                <p className="font-semibold tracking-wide text-lg leading-snug">
                                                     {story.title}
                                                 </p>
 

@@ -48,6 +48,7 @@ const WhatWeDo = () => {
                         delay={4000}
                         skewAmount={1}
                         width={700}
+                        pauseOnHover={true} 
                     >
 
                         <Card className="bg-[#0b0618] border border-white/30 rounded-[28px] w-130 overflow-hidden">

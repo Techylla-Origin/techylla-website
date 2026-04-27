@@ -46,7 +46,7 @@ const ContactPage = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className={`${urbanist.className} text-6xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 mt-60 md:mt-60`}
           >
-            Contact <span className="text-blue-300 font-semibold">Us</span>
+            Contact <span className="bg-gradient-to-b from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent font-semibold">Us</span>
           </motion.h2>
 
           <motion.h2
@@ -127,7 +127,7 @@ const ContactPage = () => {
         </div>
       </section>
 
-      <section ria-label="Company contact information" className="relative bg-gradient-to-br from-pink-100 via-blue-100 to-pink-100 px-6 md:px-12 min-h-[500] overflow-hidden">
+      <section ria-label="Company contact information" className="relative bg-gradient-to-br from-white/50 via-blue-100 to-white/50 px-6 md:px-12 min-h-[500] overflow-hidden">
         <img
           src="/Bg Network Pattern.png"
           className="absolute -top-50 -left-60 w-[500] rotate-350 opacity-30 pointer-events-none select-none"
@@ -150,7 +150,7 @@ const ContactPage = () => {
             {/* Overlay Text */}
             <div className="absolute ml-0 md:-ml-5">
               <h2 className={`${urbanist.className} text-black text-6xl font-light`}>
-                Reach Out To <span className="text-blue-800 font-medium">Techylla</span>
+                Reach Out To <span className="bg-gradient-to-b from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent font-medium">Techylla</span>
               </h2>
             </div>
           </motion.div>

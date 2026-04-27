@@ -46,7 +46,7 @@ const Careers = () => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className={`${urbanist.className} text-6xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 mt-60 md:mt-60`}
                     >
-                        Career @ <span className="text-blue-300 font-semibold">Techylla</span>
+                        Career @ <span className="bg-gradient-to-b from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent font-semibold">Techylla</span>
                     </motion.h2>
 
                     <motion.h2

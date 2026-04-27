@@ -61,14 +61,14 @@ const serviceSolution = [
         href: '/services/data-cloud',
         icon: CpuChipIcon,
         children: [
-            { name: 'Data Engineering', href: '#' },
-            { name: 'Data Management', href: '#' }
+            // { name: 'Data Engineering', href: '#' },
+            // { name: 'Data Management', href: '#' }
         ]
     },
     {
         name: 'Business Transformation',
         description: 'Smarter, faster business processes',
-        href: '#',
+        href: '/services/business-transformation',
         icon: PresentationChartLineIcon,
         children: [] // no submenu
     },
@@ -86,7 +86,7 @@ const serviceSolution = [
 
 const industry = [
     { name: 'Healthcare & LifeSciences', description: 'Transforming care through technology', href: '/industry/healthcare-and-lifesciences', icon: ClipboardDocumentCheckIcon },
-    { name: 'Supply Chain & Logistics', description: 'Seamless global supply chain solutions', href: '#', icon: GlobeAltIcon },
+    { name: 'Supply Chain & Logistics', description: 'Seamless global supply chain solutions', href: '/industry/supplychain-and-logistics', icon: GlobeAltIcon },
     { name: 'Manufacturing', description: 'Smart and efficient manufacturing', href: '/industry/manufacturing', icon: Cog6ToothIcon },
     { name: 'HiTech', description: 'Advanced software and technology systems', href: '#', icon: CloudArrowUpIcon },
 ]
@@ -124,10 +124,10 @@ export default function Navbar() {
 
     return (
         <header
-            className={`fixed top-0 w-full bg-black/50 backdrop-blur-md z-50 transition-transform duration-500 ease-in-out will-change-transform ${showNavbar ? "translate-y-0" : "-translate-y-full"
+            className={`fixed top-0 w-full bg-gradient-to-br from-white/90 via-white to-blue-200/70 backdrop-blur-md z-50 transition-transform duration-500 ease-in-out will-change-transform ${showNavbar ? "translate-y-0" : "-translate-y-full"
                 }`}
         >
-            <nav aria-label="Global" className={`mx-auto flex w-full items-center justify-between p-5 lg:px-1 ${isHome ? "bg-transparent text-white" : "bg-black text-white"
+            <nav aria-label="Global" className={`mx-auto flex w-full items-center justify-between p-3 lg:px-1 ${isHome ? "bg-transparent text-white" : "bg-white text-white"
                 }`}>
                 <div className="flex ">
                     <a href="/" className="text-3xl font-semibold text-white md:ml-20">
@@ -135,8 +135,8 @@ export default function Navbar() {
 
                         <img
                             alt="Techylla company logo"
-                            src="/Techylla-Logo.png"
-                            className="h-11 w-auto"
+                            src="/SampleLogo.png"
+                            className="h-12 w-auto"
                         />
                     </a>
                 </div>
@@ -147,7 +147,7 @@ export default function Navbar() {
                         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
                     >
                         <span className="sr-only">Open main menu</span>
-                        <Menu aria-hidden="true" className="size-7 md:size-6 text-white" />
+                        <Menu aria-hidden="true" className="size-7 md:size-6 text-blue-600" />
                     </button>
                 </div>
                 <PopoverGroup className="hidden lg:flex ml-auto items-center gap-6 text-gray-600 font-medium text-xl">
@@ -157,14 +157,14 @@ export default function Navbar() {
                         onMouseLeave={() => setOpenMenu(null)}
                     >
                         <div className="absolute top-full left-0 right-0 h-6 bg-transparent"></div>
-                        <PopoverButton className={`${urbanist.className} relative flex items-center gap-x-1 text-[18px] font-normal text-white transition w-full cursor-pointer focus:outline-none`}>
+                        <PopoverButton className={`${urbanist.className} relative flex items-center gap-x-1 text-[18px] font-medium text-blue-800 transition w-full cursor-pointer focus:outline-none`}>
                             Services & Solutions
                             <ChevronDownIcon
-                                className={`size-5 text-white transition-transform duration-200 group-hover:text-blue-600 ${openMenu === "service" ? "rotate-180" : ""
+                                className={`size-5 text-blue-600 transition-transform duration-200 group-hover:text-red-600 ${openMenu === "service" ? "rotate-180" : ""
                                     }`}
                             />
                             <span
-                                className="absolute -bottom-2 left-0 right-0 h-[3] bg-indigo-300 rounded-full origin-center scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
+                                className="absolute -bottom-2 left-0 right-0 h-[3] bg-gradient-to-b from-[#002E96] via-[#005FC7] to-[#008FF7] rounded-full origin-center scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
                             />
                         </PopoverButton>
                         <AnimatePresence>
@@ -177,7 +177,7 @@ export default function Navbar() {
                                     exit={{ opacity: 0, y: 15 }}
 
                                     transition={{ type: "spring", stiffness: 260, damping: 20 }}
-                                    className={`${urbanist.className} absolute left-1/2 z-10 mt-5 w-screen max-w-xs -translate-x-1/2 rounded-sm bg-white shadow-lg`}
+                                    className={`${urbanist.className} absolute left-1/2 z-10 mt-5 w-screen max-w-xs -translate-x-1/2 rounded-sm bg-gradient-to-br from-white/90 via-white to-blue-300/80 shadow-lg`}
                                 >
                                     <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
                                     <div className="p-2">
@@ -186,13 +186,13 @@ export default function Navbar() {
                                                 key={item.name}
                                                 onMouseEnter={() => setActiveSubMenu(item.name)}
                                                 onMouseLeave={() => setActiveSubMenu(null)}
-                                                className="group relative flex items-center gap-x-2 rounded-sm p-2 text-sm/5 hover:bg-blue-50"
+                                                className="group relative flex items-center gap-x-2 rounded-sm p-2 text-sm/5 hover:bg-gradient-to-b from-blue-900 via-blue-700 to-blue-400 "
                                             >
                                                 {/* <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                                                      <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-indigo-600" /> 
                                                 </div> */}
                                                 <div className="flex-auto">
-                                                    <a href={item.href} className="block font-normal text-gray-900 text-lg">
+                                                    <a href={item.href} className="block font-normal text-gray-900 hover:text-white text-lg">
                                                         {item.name}
                                                         <span className="absolute inset-0" />
                                                     </a>
@@ -236,14 +236,14 @@ export default function Navbar() {
                         onMouseLeave={() => setOpenMenu(null)}
                     >
                         <div className="absolute top-full left-0 right-0 h-6 bg-transparent"></div>
-                        <PopoverButton className={`${urbanist.className} relative flex items-center gap-x-1 text-[18px] font-normal text-white transition w-full cursor-pointer focus:outline-none`}>
+                        <PopoverButton className={`${urbanist.className} relative flex items-center gap-x-1 text-[18px] font-medium text-blue-800 transition w-full cursor-pointer focus:outline-none`}>
                             Knowledge Center
                             <ChevronDownIcon
-                                className={`size-5 text-white transition-transform duration-200 group-hover:text-blue-600 ${openMenu === "knowledge" ? "rotate-180" : ""
+                                className={`size-5 text-blue-600 transition-transform duration-200 group-hover:text-red-600 ${openMenu === "knowledge" ? "rotate-180" : ""
                                     }`}
                             />
                             <span
-                                className="absolute -bottom-2 left-0 right-0 h-[3] bg-indigo-300 rounded-full origin-center scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
+                                className="absolute -bottom-2 left-0 right-0 h-[3] bg-gradient-to-b from-[#002E96] via-[#005FC7] to-[#008FF7] rounded-full origin-center scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
                             />
                         </PopoverButton>
                         <AnimatePresence>
@@ -257,20 +257,20 @@ export default function Navbar() {
                                     exit={{ opacity: 0, y: 15 }}
 
                                     transition={{ type: "spring", stiffness: 260, damping: 20 }}
-                                    className={`${urbanist.className} absolute left-1/2 z-10 mt-5 w-screen max-w-xs -translate-x-1/2 rounded-sm bg-white shadow-lg`}
+                                    className={`${urbanist.className} absolute left-1/2 z-10 mt-5 w-screen max-w-xs -translate-x-1/2 rounded-sm bg-gradient-to-br from-white/90 via-white to-blue-300/80 shadow-lg`}
                                 >
                                     <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
                                     <div className="p-2">
                                         {knowledgeCenter.map((item) => (
                                             <div
                                                 key={item.name}
-                                                className="group relative flex items-center gap-x-2 rounded-sm p-2 text-sm/5 hover:bg-blue-50"
+                                                className="group relative flex items-center gap-x-2 rounded-sm p-2 text-sm/5 hover:bg-gradient-to-b from-blue-900 via-blue-700 to-blue-400"
                                             >
                                                 {/* <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                                                     <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-indigo-600" />
                                                 </div> */}
                                                 <div className="flex-auto">
-                                                    <a href={item.href} className="block font-normal text-gray-900 text-lg">
+                                                    <a href={item.href} className="block font-normal text-gray-900 hover:text-white text-lg">
                                                         {item.name}
                                                         <span className="absolute inset-0" />
                                                     </a>
@@ -292,14 +292,14 @@ export default function Navbar() {
                         onMouseLeave={() => setOpenMenu(null)}
                     >
                         <div className="absolute top-full left-0 right-0 h-6 bg-transparent"></div>
-                        <PopoverButton className={`${urbanist.className} relative flex items-center gap-x-1 text-[18px] font-normal text-white transition w-full cursor-pointer focus:outline-none`}>
+                        <PopoverButton className={`${urbanist.className} relative flex items-center gap-x-1 text-[18px] font-medium text-blue-800 transition w-full cursor-pointer focus:outline-none`}>
                             Industry
                             <ChevronDownIcon
-                                className={`size-5 text-white transition-transform duration-200 group-hover:text-blue-600 ${openMenu === "industry" ? "rotate-180" : ""
+                                className={`size-5 text-blue-600 transition-transform duration-200 group-hover:text-red-600 ${openMenu === "industry" ? "rotate-180" : ""
                                     }`}
                             />
                             <span
-                                className="absolute -bottom-2 left-0 right-0 h-[3] bg-indigo-300 rounded-full origin-center scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
+                                className="absolute -bottom-2 left-0 right-0 h-[3] bg-gradient-to-b from-[#002E96] via-[#005FC7] to-[#008FF7] rounded-full origin-center scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
                             />
                         </PopoverButton>
                         <AnimatePresence>
@@ -312,20 +312,20 @@ export default function Navbar() {
                                     exit={{ opacity: 0, y: 15 }}
 
                                     transition={{ type: "spring", stiffness: 260, damping: 20 }}
-                                    className={`${urbanist.className} absolute left-1/2 z-10 mt-5 w-screen max-w-xs -translate-x-1/2 rounded-sm bg-white shadow-lg`}
+                                    className={`${urbanist.className} absolute left-1/2 z-10 mt-5 w-screen max-w-xs -translate-x-1/2 rounded-sm bg-gradient-to-br from-white/90 via-white to-blue-300/80 shadow-lg`}
                                 >
                                     <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
                                     <div className="p-2">
                                         {industry.map((item) => (
                                             <div
                                                 key={item.name}
-                                                className="group relative flex items-center gap-x-2 rounded-sm p-2 text-sm/5 hover:bg-blue-50"
+                                                className="group relative flex items-center gap-x-2 rounded-sm p-2 text-sm/5 hover:bg-gradient-to-b from-blue-900 via-blue-700 to-blue-400"
                                             >
                                                 {/* <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                                                     <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-indigo-600" />
                                                 </div> */}
                                                 <div className="flex-auto">
-                                                    <a href={item.href} className="block font-normal text-gray-900 text-lg">
+                                                    <a href={item.href} className="block font-normal text-gray-900 hover:text-white text-lg">
                                                         {item.name}
                                                         <span className="absolute inset-0" />
                                                     </a>
@@ -343,11 +343,11 @@ export default function Navbar() {
                 </PopoverGroup>
 
                 <Link href="/about" className="hidden lg:inline-block relative group">
-                    <button className={`${urbanist.className} ml-6 hover:text-blue-200 font-normal text-white transition-all duration-300 cursor-pointer relative flex items-center gap-x-1 text-[18px]`}>
+                    <button className={`${urbanist.className} ml-6 hover:text-red-600 font-medium text-blue-800 transition-all duration-300 cursor-pointer relative flex items-center gap-x-1 text-[18px]`}>
                         About Us
 
                         <span
-                            className="absolute -bottom-2 left-0 right-0 h-[3] bg-indigo-300 rounded-full origin-center scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
+                            className="absolute -bottom-2 left-0 right-0 h-[3] bg-gradient-to-b from-blue-800 via-blue-600 to-blue-400 rounded-full origin-center scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
                         />
 
                     </button>
@@ -356,11 +356,11 @@ export default function Navbar() {
                 </Link>
 
                 <Link href="/careers" className="hidden lg:inline-block relative group">
-                    <button className={`${urbanist.className} ml-7 hover:text-blue-200 font-normal text-white transition-all duration-300 cursor-pointer relative flex items-center gap-x-1 text-[18px]`}>
+                    <button className={`${urbanist.className} ml-7 hover:text-red-600 font-medium text-blue-800 transition-all duration-300 cursor-pointer relative flex items-center gap-x-1 text-[18px]`}>
                         Careers
 
                         <span
-                            className="absolute -bottom-2 left-0 right-0 h-[3] bg-indigo-300 rounded-full origin-center scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
+                            className="absolute -bottom-2 left-0 right-0 h-[3] bg-gradient-to-b from-blue-800 via-blue-600 to-blue-400 rounded-full origin-center scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"
                         />
 
                     </button>
@@ -368,7 +368,7 @@ export default function Navbar() {
 
                 </Link>
                 <Link href="/contact" className="hidden lg:inline-block">
-                    <button className={`${urbanist.className} ml-3 rounded-2xl hover:text-white text-[18px] hover:bg-blue-800 px-4 py-2 font-normal text-white transition-all duration-300 cursor-pointer`}>
+                    <button className={`${urbanist.className} ml-3 rounded-2xl hover:text-white text-[18px] hover:bg-blue-800 px-4 py-2 font-medium text-blue-800 transition-all duration-300 cursor-pointer`}>
                         Contact Us
                     </button>
                 </Link>
@@ -403,7 +403,7 @@ export default function Navbar() {
 
                                     <img
                                         alt="Techylla company logo"
-                                        src="/Techylla-Logo.png"
+                                        src="/SampleLogo.png"
                                         className="h-10 w-auto -ml-3"
                                     />
                                 </a>

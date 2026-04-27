@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { useEffect } from "react";
 import { Manrope } from "next/font/google";
 
 const manrope = Manrope({
@@ -109,6 +110,18 @@ const leaders = [
 const ThoughtLeadership = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
+    const [isPaused, setIsPaused] = useState(false);
+
+    useEffect(() => {
+        if (isPaused) return; // stop when hovering
+
+        const interval = setInterval(() => {
+            setActiveIndex((prev) => (prev + 1) % leaders.length);
+        }, 5000); // 5 sec
+
+        return () => clearInterval(interval);
+    }, [isPaused]);
+
     const nextIndex = (activeIndex + 1) % leaders.length;
     const nextNextIndex = (activeIndex + 2) % leaders.length;
 
@@ -127,7 +140,9 @@ const ThoughtLeadership = () => {
 
             <div className="max-w-6xl mx-auto px-1 md:px-6">
 
-                <div className="grid grid-cols-2 md:grid-cols-2 items-start">
+                <div
+                    onMouseEnter={() => setIsPaused(true)}
+                    onMouseLeave={() => setIsPaused(false)} className="grid grid-cols-2 md:grid-cols-2 items-start">
 
                     {/* LEFT SIDE IMAGE STACK */}
                     <div className="flex items-end gap-1 overflow-hidden">
@@ -136,20 +151,22 @@ const ThoughtLeadership = () => {
                         <motion.div
                             layout
                             onClick={() => setActiveIndex(nextNextIndex)}
-                            className="relative w-32 md:h-110 h-105 cursor-pointer overflow-hidden rounded-[7px] -ml-14"
+                            className="relative w-32 md:h-64 h-105 cursor-pointer overflow-hidden rounded-[7px] -ml-14"
                             // whileHover={{ scale: 1.05 }}
                             transition={{ duration: 0.35, ease: "easeOut" }}
                         >
-                            <motion.img
-                                key={leaders[nextNextIndex].image}
-                                src={leaders[nextNextIndex].image}
-                                alt={`${leaders[nextNextIndex].name} portrait`}
-                                className="w-full h-full object-cover opacity-70"
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 0.8 }}
-                                transition={{ duration: 0.4 }}
-                                whileHover={{ scale: 1.05 }}
-                            />
+                            <AnimatePresence mode="wait">
+                                <motion.img
+                                    key={leaders[nextNextIndex].image}
+                                    src={leaders[nextNextIndex].image}
+                                    alt={`${leaders[nextNextIndex].name} portrait`}
+                                    className="w-full h-full object-cover opacity-70"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 0.8 }}
+                                    transition={{ duration: 0.4 }}
+                                    whileHover={{ scale: 1.05 }}
+                                />
+                            </AnimatePresence>
 
                         </motion.div>
 
@@ -157,20 +174,22 @@ const ThoughtLeadership = () => {
                         <motion.div
                             layout
                             onClick={() => setActiveIndex(nextIndex)}
-                            className="relative w-40 md:h-110 h-105 cursor-pointer overflow-hidden rounded-[7px]"
+                            className="relative w-40 md:h-64 h-105 cursor-pointer overflow-hidden rounded-[7px]"
                             // whileHover={{ scale: 1.03 }}
                             transition={{ duration: 0.35 }}
                         >
-                            <motion.img
-                                key={leaders[nextIndex].image}
-                                src={leaders[nextIndex].image}
-                                alt={`${leaders[nextIndex].name} portrait`}
-                                className="w-full h-full object-cover opacity-85"
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 0.9 }}
-                                transition={{ duration: 0.4 }}
-                                whileHover={{ scale: 1.03 }}
-                            />
+                            <AnimatePresence mode="wait">
+                                <motion.img
+                                    key={leaders[nextIndex].image}
+                                    src={leaders[nextIndex].image}
+                                    alt={`${leaders[nextIndex].name} portrait`}
+                                    className="w-full h-full object-cover opacity-85 rounded-[7px]"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 0.9 }}
+                                    transition={{ duration: 0.4 }}
+                                    whileHover={{ scale: 1.03 }}
+                                />
+                            </AnimatePresence>
 
                         </motion.div>
 
@@ -185,10 +204,10 @@ const ThoughtLeadership = () => {
                                     key={activeLeader.image}
                                     src={activeLeader.image}
                                     alt={`${activeLeader.name}, ${activeLeader.role || "Team member"}`}
-                                    className="w-full h-full object-cover"
-                                    initial={{ opacity: 0, scale: 1.05 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    exit={{ opacity: 0 }}
+                                    className="w-full h-full object-cover rounded-[7px]"
+                                    initial={{ opacity: 0, x: -60 }}
+                                    animate={{ opacity: 1, x: 0, }}
+                                    exit={{ x: 60, opacity: 0 }}
                                     transition={{ duration: 0.5 }}
                                 />
                             </AnimatePresence>

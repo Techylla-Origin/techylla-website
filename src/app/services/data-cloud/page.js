@@ -49,7 +49,7 @@ const DataCloud = () => {
                         transition={{ duration: 0.8 }}
                         className={`${urbanist.className} text-5xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 mt-60`}
                     >
-                        Data & Cloud Services @ <span className="text-blue-300">Techylla</span>
+                        Data & Cloud Services @ <span className="bg-gradient-to-b from-blue-600 via-blue-600 to-blue-300 bg-clip-text text-transparent">Techylla</span>
                     </motion.h2>
 
                     <motion.h2
