@@ -11,12 +11,9 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import { Urbanist } from 'next/font/google'
+ 
 
-const urbanist = Urbanist({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-});
+ ;
 
 export default function SuccessStories() {
 
@@ -58,13 +55,13 @@ export default function SuccessStories() {
 
             <div className="max-w-7xl mx-auto px-6">
 
-                <h2 className={`${urbanist.className} md:text-6xl text-5xl font-light tracking-tight leading-tight md:mb-16 mb-12`}>
+                <h2 className={`  md:text-6xl text-5xl font-light tracking-tight leading-tight md:mb-16 mb-12`}>
                     Success Stories
                 </h2>
 
             </div>
 
-            <div className={`${urbanist.className} w-full px-6`}>
+            <div className={`  w-full px-6`}>
 
                 <Swiper
                     modules={[Autoplay, Pagination]}
@@ -187,7 +184,7 @@ export default function SuccessStories() {
         }
 
         .successSwiper .swiper-pagination-bullet-active {
-          background: #000;
+          background:#FF4700
         }
 
       `}</style>

@@ -2,19 +2,10 @@
 
 import React from "react";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
-import { Manrope } from "next/font/google";
 
-const manrope = Manrope({
-    subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700", "800"]
-});
+ 
 
-import { Urbanist } from 'next/font/google'
-
-const urbanist = Urbanist({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-})
+ 
 
 const partners = [
   { name: "AWS", logo: "/aws.svg", width: "w-40", height: "h-20" },
@@ -27,10 +18,10 @@ const CoreCompetence = () => {
   return (
     <section className="min-h-screen bg-blue-100 md:py-20 py-10 overflow-hidden">
 
-      <div className={`${urbanist.className} max-w-7xl mx-auto px-6`}>
+      <div className={`  max-w-7xl mx-auto px-6`}>
 
         {/* Heading */}
-        <h2 className={`${urbanist.className} md:text-6xl text-5xl font-light tracking-tight leading-tight mb-4`}>
+        <h2 className={`  md:text-6xl text-5xl font-light tracking-tight leading-tight mb-4`}>
           Core Competence
         </h2>
 

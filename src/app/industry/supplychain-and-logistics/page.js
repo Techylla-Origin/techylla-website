@@ -3,20 +3,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import { Database, Brain, BarChart3, RefreshCcw, Radar, Lightbulb, Settings2, TrendingUp } from "lucide-react";
-import { Manrope } from "next/font/google";
 import Script from "next/script";
 
-const manrope = Manrope({
-    subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700", "800"],
-});
 
-import { Urbanist } from 'next/font/google'
+ 
 
-const urbanist = Urbanist({
-    subsets: ['latin'],
-    weight: ['300', '400', '500', '600', '700'],
-})
+ 
 
 const SupplyChainandLogistics = () => {
     return (
@@ -41,7 +33,7 @@ const SupplyChainandLogistics = () => {
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className={`${urbanist.className} text-5xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 mt-60`}
+                        className={`  text-5xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 mt-60`}
                     >
                         Supply Chain & Logistics @ <span className="bg-gradient-to-b from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Techylla</span>
                     </motion.h2>
@@ -50,7 +42,7 @@ const SupplyChainandLogistics = () => {
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.8 }}
-                        className={`${urbanist.className} text-md md:text-3xl font-light text-white tracking-wide leading-10 mb-20`}
+                        className={`  text-md md:text-3xl font-light text-white tracking-wide leading-10 mb-20`}
                     >
                         Driving Agile, Cost-Efficient Supply Chains through <span className="text-blue-200">Advanced Analytics</span>
                     </motion.h2>
@@ -83,7 +75,7 @@ const SupplyChainandLogistics = () => {
                         />
 
                         <div className="absolute top-3 md:top-6 md:-ml-5 ml-0 ">
-                            <h2 className={`${urbanist.className} text-black md:text-6xl text-4xl font-light md:w-230 w-full`}>
+                            <h2 className={`  text-black md:text-6xl text-4xl font-light md:w-230 w-full`}>
                                 How Analytics Transforms <span className="text-blue-800">Supply Chains</span> ?
                             </h2>
                         </div>
@@ -92,11 +84,11 @@ const SupplyChainandLogistics = () => {
                     {/* TEXT */}
                     <div className="space-y-8 mt-10 md:mt-30 ml-0 md:-ml-10 md:mb-0 mb-10">
 
-                        <h2 className={`${urbanist.className} text-black text-xl font-light`}>
+                        <h2 className={`  text-black text-xl font-light`}>
                             Supply chain analytics uses data from across the value chain—such as sales, production, and transportation—to improve overall performance and provide meaningful insights into operations. Traditional approaches focus on analyzing past and current data, often relying on manual interpretation, which limits the ability to detect patterns, identify inefficiencies, and respond to disruptions effectively.
                         </h2>
 
-                        <h2 className={`${urbanist.className} text-blue-900 text-xl font-medium`}>
+                        <h2 className={`  text-blue-900 text-xl font-medium`}>
                             With advanced analytics, organizations can uncover trends, forecast demand, and optimize operations—enabling smarter decisions, greater agility, lower costs, and a more resilient supply chain.
                         </h2>
 
@@ -104,7 +96,7 @@ const SupplyChainandLogistics = () => {
                 </div>
             </section>
 
-            <section aria-label="Challenges in Traditional Supply Chain Management" className={`${urbanist.className} relative py-10 px-6 md:px-19 overflow-hidden bg-gradient-to-t from-blue-50 to-pink-50`}>
+            <section aria-label="Challenges in Traditional Supply Chain Management" className={`  relative py-10 px-6 md:px-19 overflow-hidden bg-gradient-to-t from-blue-50 to-pink-50`}>
                 {/* Heading */}
                 <div className="max-w-6xl mx-auto mb-10">
                     <motion.h2
@@ -213,7 +205,7 @@ const SupplyChainandLogistics = () => {
                 </div>
             </section>
 
-            <section aria-label="Advanced Supply Chain Analytics Approach" className={`${urbanist.className} relative py-10 px-6 md:px-19 overflow-hidden bg-gradient-to-b from-blue-50 to-pink-50`}>
+            <section aria-label="Advanced Supply Chain Analytics Approach" className={`  relative py-10 px-6 md:px-19 overflow-hidden bg-gradient-to-b from-blue-50 to-pink-50`}>
 
                 {/* Heading */}
                 <div className="max-w-6xl mx-auto mb-14">
@@ -341,7 +333,7 @@ const SupplyChainandLogistics = () => {
 
             <section
                 aria-label="Technology & Expertise"
-                className={`${urbanist.className} relative py-10 px-6 md:px-20 overflow-hidden bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#020617]`}
+                className={`  relative py-10 px-6 md:px-20 overflow-hidden bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#020617]`}
             >
 
                 {/* Glow Background Effects */}
@@ -431,7 +423,7 @@ const SupplyChainandLogistics = () => {
                 </div>
             </section>
 
-            <section aria-label="Business Impact of Supply Chain Analytics" className={`${urbanist.className} relative py-10 px-6 md:px-19 bg-black text-white min-h-[70%] overflow-hidden`}>
+            <section aria-label="Business Impact of Supply Chain Analytics" className={`  relative py-10 px-6 md:px-19 bg-black text-white min-h-[70%] overflow-hidden`}>
 
                 <img src="/Bg Network Pattern.png" className="absolute -top-50 -left-60 w-[500] opacity-100 pointer-events-none select-none" />
                 <img src="/Bg Network Pattern.png" className="absolute -bottom-40 -right-30 w-[700] opacity-100 pointer-events-none select-none" />
@@ -552,11 +544,11 @@ const SupplyChainandLogistics = () => {
                         transition={{ duration: 0.7 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className={`${urbanist.className} text-5xl font-semibold text-black leading-tight mb-6 mt-10`}>
+                        <h2 className={`  text-5xl font-semibold text-black leading-tight mb-6 mt-10`}>
                             Have an Idea? Let’s Build It <span className="text-blue-800 font-bold">Together</span>
                         </h2>
 
-                        <p className={`${urbanist.className} text-gray-800 text-xl max-w-[700]`}>
+                        <p className={`  text-gray-800 text-xl max-w-[700]`}>
                             From concept to reality, we make it happen.
                         </p>
                     </motion.div>
@@ -564,7 +556,7 @@ const SupplyChainandLogistics = () => {
                     {/* RIGHT SIDE FORM */}
                     <div className="relative mt-10 p-6 sm:p-8 rounded-xl shadow-lg bg-white overflow-hidden">
 
-                        <h3 className={`${urbanist.className} text-2xl sm:text-3xl font-semibold mb-4`}>
+                        <h3 className={`  text-2xl sm:text-3xl font-semibold mb-4`}>
                             Send us your details
                         </h3>
 

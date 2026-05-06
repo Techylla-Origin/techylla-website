@@ -4,19 +4,10 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
-import { Manrope } from "next/font/google";
 
-const manrope = Manrope({
-    subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700", "800"]
-});
 
-import { Urbanist } from 'next/font/google'
 
-const urbanist = Urbanist({
-    subsets: ['latin'],
-    weight: ['300', '400', '500', '600', '700'],
-})
+
 
 const leaders = [
     {
@@ -128,11 +119,11 @@ const ThoughtLeadership = () => {
     const activeLeader = leaders[activeIndex];
 
     return (
-        <section className="min-h-screen bg-blue-100 md:py-10 py-10 overflow-hidden">
+        <section className="min-h-screen bg-[#F7F8FA] md:py-10 py-10 overflow-hidden">
 
             <div className="max-w-7xl mx-auto px-6">
 
-                <h2 className={`${urbanist.className} md:text-6xl text-5xl font-light tracking-tight leading-tight md:mb-16 mb-12`}>
+                <h2 className={`  md:text-6xl text-5xl font-light tracking-tight leading-tight md:mb-16 mb-12`}>
                     Thought Leadership
                 </h2>
 
@@ -218,12 +209,12 @@ const ThoughtLeadership = () => {
                                 initial={{ opacity: 0, y: 10 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.4 }}
-                                className={`${urbanist.className} absolute bottom-2 left-1 md:left-4 text-white text-2xl md:text-3xl font-normal`}
+                                className={`  absolute bottom-2 left-1 md:left-4 text-white text-2xl md:text-3xl font-normal`}
                             >
                                 {activeLeader.name} <br></br>
 
                                 {activeLeader.role && (
-                                    <span className={`${urbanist.className} text-lg md:text-xl leading-tight font-normal text-white`}>
+                                    <span className={`  text-lg md:text-xl leading-tight font-normal text-white`}>
                                         {activeLeader.role}
                                     </span>
                                 )}
@@ -246,11 +237,11 @@ const ThoughtLeadership = () => {
                                 transition={{ duration: 0.45, ease: "easeOut" }}
                             >
 
-                                <h3 className={`${urbanist.className} text-xl md:text-3xl text-[#1368B6] font-normal leading-tight`}>
+                                <h3 className={`  text-xl md:text-3xl text-[#003199] font-normal leading-tight`}>
                                     {activeLeader.title}
                                 </h3>
 
-                                <p className={`${urbanist.className} text-[10px] md:text-[18px] text-gray-700 mt-5 leading-relaxed whitespace-pre-line`}>
+                                <p className={`  text-[10px] md:text-[18px] text-gray-700 mt-5 leading-relaxed whitespace-pre-line`}>
                                     {activeLeader.description}
                                 </p>
 
@@ -261,19 +252,18 @@ const ThoughtLeadership = () => {
                                         <Link href={activeLeader.link}>
                                             <motion.button
                                                 whileTap={{ scale: 0.95 }}
-                                                className={`${urbanist.className} bg-black text-white px-3 py-2 md:px-7 md:py-2 font-semibold tracking-widest text-[10px] md:text-[15px] border-b border-transparent hover:bg-blue-100 hover:text-black hover:border-black duration-500 cursor-pointer whitespace-nowrap`}
+                                                className={` bg-black text-white px-3 py-2 md:px-7 md:py-2 font-semibold tracking-widest text-[10px] md:text-[15px] border-b border-transparent hover:bg-blue-100 hover:text-black hover:border-black duration-500 cursor-pointer whitespace-nowrap`}
                                             >
                                                 READ MORE
                                             </motion.button>
                                         </Link>
                                     )}
-
                                     {/* CASE STUDY */}
                                     {activeLeader.caseStudyLink && (
                                         <Link href={activeLeader.caseStudyLink}>
                                             <motion.button
                                                 whileTap={{ scale: 0.95 }}
-                                                className={`${urbanist.className} bg-black md:bg-transparent text-white md:text-black px-1 py-2 md:px-7 md:py-2 font-semibold tracking-tight text-[10px] md:text-[15px] border border-black hover:bg-black hover:text-white duration-500 cursor-pointer whitespace-nowrap`}
+                                                className={`  bg-black md:bg-transparent text-white md:text-black px-1 py-2 md:px-7 md:py-2 font-semibold tracking-tight text-[10px] md:text-[15px] border border-black hover:bg-black hover:text-white duration-500 cursor-pointer whitespace-nowrap`}
                                             >
                                                 Review the Tariff Simulation Model
                                             </motion.button>

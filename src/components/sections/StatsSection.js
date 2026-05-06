@@ -2,30 +2,21 @@
 
 import Counter from "@/components/Counter";
 
-import { Manrope } from "next/font/google";
-
-const manrope = Manrope({
-    subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700", "800"]
-});
-import { Urbanist } from 'next/font/google'
+ 
 import Link from "next/link";
 
-const urbanist = Urbanist({
-    subsets: ['latin'],
-    weight: ['300', '400', '500', '600', '700'],
-})
+ 
 
 export default function StatsSection() {
     return (
         <section
             aria-label="Company statistics and achievements"
-            className="bg-blue-800">
+            className="bg-[#003199]">
 
             <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[2fr_1fr] min-h-screen">
 
                 {/* LEFT SIDE (LIGHT BLUE) */}
-                <div className={`${urbanist.className} text-white flex items-center py-12 md:py-20`}>
+                <div className={`  text-white flex items-center py-12 md:py-20`}>
                     <div>
                         <h1 className="text-3xl md:text-5xl font-light leading-tight max-w-4xl">
                             We empower organizations to thrive in the digital era through intelligent data and transformative analytics
@@ -33,7 +24,7 @@ export default function StatsSection() {
                         <Link href="/about">
                             <button
                                 aria-label="Learn more about our services and capabilities"
-                                className="mt-8 bg-red-600/90 px-5 py-2 md:px-9 md:py-3 text-md rounded-md tracking-wide cursor-pointer">
+                                className="mt-8 bg-[#FF4700]/90 px-5 py-2 md:px-9 md:py-3 text-md rounded-md tracking-wide cursor-pointer">
                                 Know More
                             </button>
                         </Link>
@@ -41,7 +32,7 @@ export default function StatsSection() {
                 </div>
 
                 {/* RIGHT SIDE (DARK BLUE) */}
-                <div className={`${urbanist.className} font-light bg-blue-900 text-white flex items-center px-10 py-10`}>
+                <div className={`  font-light bg-[#232E47] text-white flex items-center px-10 py-10`}>
                     <div className="space-y-8">
 
                         <div>

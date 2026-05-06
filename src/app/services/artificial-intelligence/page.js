@@ -3,25 +3,18 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import { Workflow, FlaskConical, TrendingUp, Settings2, Settings, Zap, Users } from "lucide-react";
-import { Manrope } from "next/font/google";
 import Script from "next/script";
 import AIAssessment from "@/components/AIAssessment";
 import { Brain, DollarSign } from "lucide-react";
 import AIDeliveryLifecycle from "@/components/AIDeliveryLifecycle";
 
-const manrope = Manrope({
-    subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700", "800"],
-});
 
-import { Urbanist } from 'next/font/google'
+
+ 
 import MetricCard from "@/components/AIMetrics";
 import Link from "next/link";
 
-const urbanist = Urbanist({
-    subsets: ['latin'],
-    weight: ['300', '400', '500', '600', '700'],
-})
+ 
 
 const ArtificialIntelligence = () => {
 
@@ -49,7 +42,7 @@ const ArtificialIntelligence = () => {
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className={`${urbanist.className} text-5xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 mt-60`}
+                        className={`  text-5xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 mt-60`}
                     >
                         AI Services @ <span className="bg-gradient-to-b from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Techylla</span>
                     </motion.h2>
@@ -58,7 +51,7 @@ const ArtificialIntelligence = () => {
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.8 }}
-                        className={`${urbanist.className} text-md md:text-3xl font-light text-white tracking-wide leading-10 mb-20`}
+                        className={`  text-md md:text-3xl font-light text-white tracking-wide leading-10 mb-20`}
                     >
                         Solving real business problems with powerful <span className="text-blue-200">AI solutions.</span>
                     </motion.h2>
@@ -67,7 +60,7 @@ const ArtificialIntelligence = () => {
             </section>
 
             {/* SECTION 2 */}
-            <section className={`${urbanist.className} relative bg-blue-100 px-6 md:px-12 py-20 md:py-10 overflow-hidden`}>
+            <section className={`  relative bg-blue-100 px-6 md:px-12 py-20 md:py-10 overflow-hidden`}>
 
                 {/* Background visuals */}
                 <img src="/Bg Network Pattern.png" className="absolute -top-40 -left-40 w-[400] opacity-20 pointer-events-none" />
@@ -80,7 +73,7 @@ const ArtificialIntelligence = () => {
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        viewport={{ once: true }} className={`${urbanist.className} text-black text-4xl md:text-6xl font-light`}>
+                        viewport={{ once: true }} className={`  text-black text-4xl md:text-6xl font-light`}>
                         Is <span className="text-blue-800 font-medium">AI</span> right for Your Supply Chain?
                     </motion.h2>
 
@@ -151,7 +144,7 @@ const ArtificialIntelligence = () => {
                 </div>
             </section>
 
-            <section className={`${urbanist.className} bg-blue-900 py-10 md:py-10 px-4 md:px-12 overflow-hidden`}>
+            <section className={`  bg-blue-900 py-10 md:py-10 px-4 md:px-12 overflow-hidden`}>
 
                 <div className="max-w-6xl mx-auto mb-10">
                     <motion.h2
@@ -221,7 +214,7 @@ const ArtificialIntelligence = () => {
 
 
 
-            <section className={`${urbanist.className} relative bg-black text-white py-16 px-6 md:px-12 overflow-hidden`}>
+            <section className={`  relative bg-black text-white py-16 px-6 md:px-12 overflow-hidden`}>
 
                 <img
                     src="/Bg Network Pattern.png"
@@ -321,11 +314,11 @@ const ArtificialIntelligence = () => {
                         transition={{ duration: 0.7 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className={`${urbanist.className} text-5xl font-semibold text-black leading-tight mb-6 mt-10`}>
+                        <h2 className={`  text-5xl font-semibold text-black leading-tight mb-6 mt-10`}>
                             Have an Idea? Let’s Build It <span className="text-blue-800 font-bold">Together</span>
                         </h2>
 
-                        <p className={`${urbanist.className} text-gray-800 text-xl max-w-[700]`}>
+                        <p className={`  text-gray-800 text-xl max-w-[700]`}>
                             From concept to reality, we make it happen.
                         </p>
                     </motion.div>
@@ -333,7 +326,7 @@ const ArtificialIntelligence = () => {
                     {/* RIGHT SIDE FORM */}
                     <div className="relative mt-10 p-6 sm:p-8 rounded-xl shadow-lg bg-white overflow-hidden">
 
-                        <h3 className={`${urbanist.className} text-2xl sm:text-3xl font-semibold mb-4`}>
+                        <h3 className={`  text-2xl sm:text-3xl font-semibold mb-4`}>
                             Send us your details
                         </h3>
 

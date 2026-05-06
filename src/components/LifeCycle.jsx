@@ -1,15 +1,12 @@
 "use client";
 
-import { Urbanist } from 'next/font/google'
-const urbanist = Urbanist({
-    subsets: ['latin'],
-    weight: ['300', '400', '500', '600', '700'],
-})
+ 
+ 
 
 export default function LifecycleStep({ title, desc, icon: Icon }) {
   return (
     <div
-      className={`${urbanist.className}
+      className={` 
         group relative rounded-2xl p-5 md:p-6
         bg-gradient-to-b from-[#0b1220] via-[#0f172a] to-[#020617]
         border border-white/10 backdrop-blur-xl

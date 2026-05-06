@@ -3,20 +3,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import { Workflow, FlaskConical, TrendingUp, Settings2 } from "lucide-react";
-import { Manrope } from "next/font/google";
 import Script from "next/script";
 
-const manrope = Manrope({
-    subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700", "800"],
-});
 
-import { Urbanist } from 'next/font/google'
+ 
 
-const urbanist = Urbanist({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-})
+ 
 
 const HealthcareandLifesciences = () => {
     return (
@@ -41,7 +33,7 @@ const HealthcareandLifesciences = () => {
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className={`${urbanist.className} text-5xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 mt-60`}
+                        className={`  text-5xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 mt-60`}
                     >
                         Healthcare & Life Sciences @ <span className="bg-gradient-to-b from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Techylla</span>
                     </motion.h2>
@@ -50,7 +42,7 @@ const HealthcareandLifesciences = () => {
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.8 }}
-                        className={`${urbanist.className} text-md md:text-3xl font-light text-white tracking-wide leading-10 mb-20`}
+                        className={`  text-md md:text-3xl font-light text-white tracking-wide leading-10 mb-20`}
                     >
                         Optimizing Pharmaceutical Storage with <span className="text-blue-200">Predictive Capacity Intelligence</span>
                     </motion.h2>
@@ -75,7 +67,7 @@ const HealthcareandLifesciences = () => {
                         className="relative"
                     >
                         <Image
-                            src="/HealthcarePageImg5.png"
+                            src="/Healthcare-Img-5.png"
                             alt="Pharmaceutical storage and healthcare supply chain operations"
                             width={390}
                             height={500}
@@ -83,7 +75,7 @@ const HealthcareandLifesciences = () => {
                         />
 
                         <div className="absolute top-3 md:top-10 md:-ml-5 ml-0">
-                            <h2 className={`${urbanist.className} text-black md:text-5xl text-4xl font-light md:w-230 w-full`}>
+                            <h2 className={`  text-black md:text-5xl text-4xl font-light md:w-230 w-full`}>
                                 Why <span className="text-blue-800">Predictive Storage Capacity Planning</span> is Essential in Pharmaceuticals
                             </h2>
                         </div>
@@ -92,11 +84,11 @@ const HealthcareandLifesciences = () => {
                     {/* TEXT */}
                     <div className="space-y-8 mt-10 md:mt-30 ml-0 md:-ml-10 md:mb-0 mb-10">
 
-                        <h2 className={`${urbanist.className} text-black text-xl font-light`}>
+                        <h2 className={`  text-black text-xl font-light`}>
                             Pharmaceutical products require tightly controlled storage to maintain integrity and meet regulatory standards. Storage ranges from ambient and cold conditions to deep-frozen and restricted-access zones, and even small shifts in product mix can significantly impact capacity requirements.
                         </h2>
 
-                        <h2 className={`${urbanist.className} text-blue-900 text-xl font-medium`}>
+                        <h2 className={`  text-blue-900 text-xl font-medium`}>
                             A data-driven approach enables better visibility into these changes, allowing organizations to forecast storage needs accurately and ensure efficient, compliant, and stable operations across the supply chain.
                         </h2>
 
@@ -104,7 +96,7 @@ const HealthcareandLifesciences = () => {
                 </div>
             </section>
 
-            <section aria-label="Predictive capacity planning approach" className={`${urbanist.className} relative py-10 px-6 md:px-19 overflow-hidden bg-gradient-to-t from-blue-50 to-green-50`}>
+            <section aria-label="Predictive capacity planning approach" className={`  relative py-10 px-6 md:px-19 overflow-hidden bg-gradient-to-t from-blue-50 to-green-50`}>
                 {/* Heading */}
                 <div className="max-w-6xl mx-auto mb-10">
                     <motion.h2
@@ -221,7 +213,7 @@ const HealthcareandLifesciences = () => {
                 </div>
             </section >
 
-            <section className={`${urbanist.className} relative py-10 px-6 md:px-19 overflow-hidden bg-gradient-to-b from-blue-50 to-green-50`}>
+            <section className={`  relative py-10 px-6 md:px-19 overflow-hidden bg-gradient-to-b from-blue-50 to-green-50`}>
 
                 {/* Heading */}
                 <div className="max-w-6xl mx-auto mb-14">
@@ -346,7 +338,7 @@ const HealthcareandLifesciences = () => {
                 </div>
             </section>
 
-            <section aria-label="Business impact of predictive storage planning" className={`${urbanist.className} relative py-10 px-6 md:px-19 bg-black text-white min-h-[70%] overflow-hidden`}>
+            <section aria-label="Business impact of predictive storage planning" className={`  relative py-10 px-6 md:px-19 bg-black text-white min-h-[70%] overflow-hidden`}>
 
                 <img src="/Bg Network Pattern.png" className="absolute -top-50 -left-60 w-[500] opacity-100 pointer-events-none select-none" />
                 <img src="/Bg Network Pattern.png" className="absolute -bottom-40 -right-30 w-[700] opacity-100 pointer-events-none select-none" />
@@ -373,7 +365,7 @@ const HealthcareandLifesciences = () => {
                         viewport={{ once: true }} className="relative rounded-3xl overflow-hidden group">
 
                         <img
-                            src="/HealthcarePageImg6.png"
+                            src="/Healthcare-Img-6.png"
                             alt="Proactive capacity planning in pharmaceutical storage"
                             className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500"
                         />
@@ -399,7 +391,7 @@ const HealthcareandLifesciences = () => {
                         viewport={{ once: true }} className="relative rounded-3xl overflow-hidden group">
 
                         <img
-                            src="/HealthcarePageImg7.png"
+                            src="/Healthcare-Img-7.png"
                             alt="Optimized storage utilization in healthcare supply chain"
                             className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500"
                         />
@@ -425,7 +417,7 @@ const HealthcareandLifesciences = () => {
                         viewport={{ once: true }} className="relative rounded-3xl overflow-hidden group">
 
                         <img
-                            src="/HealthcarePageImg8.png"
+                            src="/Healthcare-Img-8.png"
                             alt="Compliant and resilient pharmaceutical operations"
                             className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500"
                         />
@@ -467,11 +459,11 @@ const HealthcareandLifesciences = () => {
                         transition={{ duration: 0.7 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className={`${urbanist.className} text-5xl font-semibold text-black leading-tight mb-6 mt-10`}>
+                        <h2 className={`  text-5xl font-semibold text-black leading-tight mb-6 mt-10`}>
                             Have an Idea? Let’s Build It <span className="text-blue-800 font-bold">Together</span>
                         </h2>
 
-                        <p className={`${urbanist.className} text-gray-800 text-xl max-w-[700]`}>
+                        <p className={`  text-gray-800 text-xl max-w-[700]`}>
                             From concept to reality, we make it happen.
                         </p>
                     </motion.div>
@@ -479,7 +471,7 @@ const HealthcareandLifesciences = () => {
                     {/* RIGHT SIDE FORM */}
                     <div className="relative mt-10 p-6 sm:p-8 rounded-xl shadow-lg bg-white overflow-hidden">
 
-                        <h3 className={`${urbanist.className} text-2xl sm:text-3xl font-semibold mb-4`}>
+                        <h3 className={`  text-2xl sm:text-3xl font-semibold mb-4`}>
                             Send us your details
                         </h3>
 

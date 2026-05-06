@@ -2,19 +2,11 @@
 
 import React from "react";
 import CardSwap, { Card } from "@/components/CardSwap";
-import { Manrope } from "next/font/google";
 import { BuildingOffice2Icon, ChartBarIcon, CodeBracketIcon, SparklesIcon } from "@heroicons/react/20/solid";
 
-const manrope = Manrope({
-    subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700", "800"]
-});
-import { Urbanist } from 'next/font/google'
+ 
 
-const urbanist = Urbanist({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-})
+ 
 
 const WhatWeDo = () => {
     return (
@@ -35,12 +27,12 @@ const WhatWeDo = () => {
 
             <div className="relative max-w-7xl z-20 mx-auto px-6 bg-cover">
 
-                <h2 className={`${urbanist.className} text-5xl md:text-6xl font-light text-white  tracking-tight leading-tight mb-20`}>
+                <h2 className={`  text-5xl md:text-6xl font-light text-white  tracking-tight leading-tight mb-20`}>
                     What We Do
                 </h2>
 
                 {/* IMPORTANT WRAPPER */}
-                <div className={`${urbanist.className} h-75 relative flex justify-center mt-10 md:mt-40 -translate-x-30 md:translate-x-0`}>
+                <div className={`  h-75 relative flex justify-center mt-10 md:mt-40 -translate-x-30 md:translate-x-0`}>
 
                     <CardSwap
                         cardDistance={70}
@@ -59,7 +51,7 @@ const WhatWeDo = () => {
                                 Data Driven Analytics
                             </div>
 
-                            <div className={`${urbanist.className} font-normal p-10 text-white`}>
+                            <div className={`  font-normal p-10 text-white`}>
                                 Reveal latent intelligence:
 
                                 Our data-driven analytics enables us to analyze massive volumes of supply chain data,
@@ -95,7 +87,7 @@ const WhatWeDo = () => {
                                 SAP and Business Analytics
                             </div>
 
-                            <div className={`${urbanist.className} font-normal p-10 text-black bg-blue-100 h-90`}>
+                            <div className={`  font-normal p-10 text-black bg-blue-100 h-90`}>
                                 Expertise in SAP Functional Areas :
 
                                 Including S/4HANA and supply chain functions, may
@@ -125,7 +117,7 @@ const WhatWeDo = () => {
                                 Application Management Service
                             </div>
 
-                            <div className={`${urbanist.className} font-normal p-10 text-white`}>
+                            <div className={`  font-normal p-10 text-white`}>
                                 Agile Data Integration :
 
                                 We integrate data seamlessly from multiple sources within the SAP ecosystem using agile methodologies. This enables faster analysis and better decision-making.
@@ -154,7 +146,7 @@ const WhatWeDo = () => {
                                 AI-Led Data Engineering
                             </div>
 
-                            <div className={`${urbanist.className} font-normal p-10 text-black bg-blue-100 h-90`}>
+                            <div className={`  font-normal p-10 text-black bg-blue-100 h-90`}>
                                 AI-Led Data Engineering :
 
                                 We build scalable data pipelines that efficiently process large volumes of data. This enables faster analytics and AI-driven insights.

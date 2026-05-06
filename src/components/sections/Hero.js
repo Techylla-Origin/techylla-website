@@ -5,19 +5,10 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import dynamic from "next/dynamic";
 import BlurText from "@/components/BlurText";
-import { Manrope } from "next/font/google";
 
-const manrope = Manrope({
-    subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700", "800"]
-});
+ 
 
-import { Urbanist } from 'next/font/google'
-
-const urbanist = Urbanist({
-    subsets: ['latin'],
-    weight: ['300', '400', '500', '600', '700'],
-})
+ 
 
 const Silk = dynamic(() => import("@/components/Silk"), {
     ssr: false,
@@ -211,7 +202,7 @@ export default function Hero() {
                         delay={40}
                         animateBy="words"
                         direction="top"
-                        className={`${urbanist.className} text-4xl md:text-6xl font-normal max-w-3xl md:mt-25 mt-40 leading-tight`}
+                        className={`  text-4xl md:text-6xl font-normal max-w-3xl md:mt-25 mt-40 leading-tight`}
                     />
 
                     <Link href={heroSlides[active].link}>
@@ -221,7 +212,7 @@ export default function Hero() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.8, duration: 0.5, ease: "easeInOut" }}
-                            className={`${urbanist.className} mt-8 bg-red-600/80 px-3 py-2 md:px-7 md:py-3 rounded-md text-md hover:bg-red-700 transition font-normal cursor-pointer`}
+                            className={`  mt-8 bg-[#FF4700]/90 px-3 py-2 md:px-7 md:py-3 rounded-md text-md hover:bg-[#FF4700] transition font-normal cursor-pointer`}
                         >
                             Explore services
                         </motion.button>
@@ -239,7 +230,7 @@ export default function Hero() {
                         <button
                             key={index}
                             onClick={() => setActive(index)}
-                            className={`${urbanist.className} relative text-left p-6 bg-black/40 text-white rounded-sm backdrop-blur border border-white/5 transition
+                            className={`  relative text-left p-6 bg-black/40 text-white rounded-sm backdrop-blur border border-white/5 transition
               ${active === index ? "block" : "hidden md:block"}`}
                         >
                             {slide.tab}

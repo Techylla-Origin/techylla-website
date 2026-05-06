@@ -3,20 +3,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import { Database, Brain, BarChart3, RefreshCcw } from "lucide-react";
-import { Manrope } from "next/font/google";
 import Script from "next/script";
 
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-});
 
-import { Urbanist } from 'next/font/google'
 
-const urbanist = Urbanist({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-})
+ 
+
+ 
 
 const Manufacturing = () => {
   return (
@@ -41,7 +34,7 @@ const Manufacturing = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className={`${urbanist.className} text-5xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 mt-60`}
+            className={`  text-5xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 mt-60`}
           >
             Manufacturing @ <span className="bg-gradient-to-b from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent">Techylla</span>
           </motion.h2>
@@ -50,7 +43,7 @@ const Manufacturing = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className={`${urbanist.className} text-md md:text-3xl font-light text-white tracking-wide leading-10 mb-20`}
+            className={`  text-md md:text-3xl font-light text-white tracking-wide leading-10 mb-20`}
           >
             Transforming Supply Chains with <span className="text-blue-200">AI-Enabled Available-to-Promise (ATP)</span> Optimization
           </motion.h2>
@@ -83,7 +76,7 @@ const Manufacturing = () => {
             />
 
             <div className="absolute top-3 md:top-6 md:-ml-5 ml-0 ">
-              <h2 className={`${urbanist.className} text-black md:text-6xl text-5xl font-light`}>
+              <h2 className={`  text-black md:text-6xl text-5xl font-light`}>
                 What is <span className="text-blue-800">AI-Enabled ATP Optimization</span> ?
               </h2>
             </div>
@@ -92,11 +85,11 @@ const Manufacturing = () => {
           {/* TEXT */}
           <div className="space-y-8 mt-10 md:mt-30 ml-0 md:-ml-10 md:mb-0 mb-10">
 
-            <h2 className={`${urbanist.className} text-black text-xl font-light`}>
+            <h2 className={`  text-black text-xl font-light`}>
               Modern manufacturing requires accurate and reliable delivery commitments. Traditional Available-to-Promise (ATP) mechanisms within ERP systems rely on transactional data such as inventory, purchase orders, and production schedules. While effective in structured environments, these systems lack the ability to adapt to dynamic supply chain conditions.
             </h2>
 
-            <h2 className={`${urbanist.className} text-blue-900 text-xl font-medium`}>
+            <h2 className={`  text-blue-900 text-xl font-medium`}>
               To address this gap, an AI-enabled ATP approach introduces predictive intelligence, enabling organizations to move from reactive planning to proactive decision-making.
             </h2>
 
@@ -104,7 +97,7 @@ const Manufacturing = () => {
         </div>
       </section>
 
-      <section aria-label="Challenges in traditional ATP systems" className={`${urbanist.className} relative py-10 px-6 md:px-19 overflow-hidden bg-gradient-to-t from-blue-50 to-pink-50`}>
+      <section aria-label="Challenges in traditional ATP systems" className={`  relative py-10 px-6 md:px-19 overflow-hidden bg-gradient-to-t from-blue-50 to-pink-50`}>
         {/* Heading */}
         <div className="max-w-6xl mx-auto mb-10">
           <motion.h2
@@ -213,7 +206,7 @@ const Manufacturing = () => {
         </div>
       </section>
 
-      <section aria-label="AI-driven ATP prediction approach" className={`${urbanist.className} relative py-10 px-6 md:px-19 overflow-hidden bg-gradient-to-b from-blue-50 to-pink-50`}>
+      <section aria-label="AI-driven ATP prediction approach" className={`  relative py-10 px-6 md:px-19 overflow-hidden bg-gradient-to-b from-blue-50 to-pink-50`}>
 
         {/* Heading */}
         <div className="max-w-6xl mx-auto mb-14">
@@ -339,7 +332,7 @@ const Manufacturing = () => {
         </div>
       </section>
 
-      <section aria-label="Business impact of AI-enabled ATP" className={`${urbanist.className} relative py-10 px-6 md:px-19 bg-black text-white min-h-[70%] overflow-hidden`}>
+      <section aria-label="Business impact of AI-enabled ATP" className={`  relative py-10 px-6 md:px-19 bg-black text-white min-h-[70%] overflow-hidden`}>
 
         <img src="/Bg Network Pattern.png" className="absolute -top-50 -left-60 w-[500] opacity-100 pointer-events-none select-none" />
         <img src="/Bg Network Pattern.png" className="absolute -bottom-40 -right-30 w-[700] opacity-100 pointer-events-none select-none" />
@@ -366,7 +359,7 @@ const Manufacturing = () => {
             viewport={{ once: true }} className="relative rounded-3xl overflow-hidden group">
 
             <img
-              src="/ManufacturingPageImg4.jpeg"
+              src="/Manufacturing-Img-4.png"
               alt="Improving delivery accuracy in manufacturing supply chains"
               className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500"
             />
@@ -392,7 +385,7 @@ const Manufacturing = () => {
             viewport={{ once: true }} className="relative rounded-3xl overflow-hidden group">
 
             <img
-              src="/ManufacturingPageImg5.jpeg"
+              src="/Manufacturing-Img-5.png"
               alt="Optimizing inventory and reducing operational costs"
               className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500"
             />
@@ -460,11 +453,11 @@ const Manufacturing = () => {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <h2 className={`${urbanist.className} text-5xl font-semibold text-black leading-tight mb-6 mt-10`}>
+            <h2 className={`  text-5xl font-semibold text-black leading-tight mb-6 mt-10`}>
               Have an Idea? Let’s Build It <span className="text-blue-800 font-bold">Together</span>
             </h2>
 
-            <p className={`${urbanist.className} text-gray-800 text-xl max-w-[700]`}>
+            <p className={`  text-gray-800 text-xl max-w-[700]`}>
               From concept to reality, we make it happen.
             </p>
           </motion.div>
@@ -472,7 +465,7 @@ const Manufacturing = () => {
           {/* RIGHT SIDE FORM */}
           <div className="relative mt-10 p-6 sm:p-8 rounded-xl shadow-lg bg-white overflow-hidden">
 
-            <h3 className={`${urbanist.className} text-2xl sm:text-3xl font-semibold mb-4`}>
+            <h3 className={`  text-2xl sm:text-3xl font-semibold mb-4`}>
               Send us your details
             </h3>
 

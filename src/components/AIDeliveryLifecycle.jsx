@@ -1,10 +1,7 @@
 "use client";
 
-import { Urbanist } from 'next/font/google'
-const urbanist = Urbanist({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-})
+ 
+ 
 
 import LifeCycle from "@/components/LifeCycle";
 import {
@@ -51,7 +48,7 @@ const steps = [
 
 export default function AIDeliveryLifecycle() {
   return (
-    <section className={`${urbanist.className} relative px-6 md:px-10 py-10 bg-blue-300/50 text-black overflow-hidden`}>
+    <section className={`  relative px-6 md:px-10 py-10 bg-blue-300/50 text-black overflow-hidden`}>
 
       <img src="/Bg Network Pattern.png" className="absolute -top-40 -left-40 w-[400] opacity-20 pointer-events-none" />
       <img src="/Bg Network Pattern.png" className="absolute -bottom-40 -right-40 w-[500] opacity-20 pointer-events-none" />

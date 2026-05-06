@@ -3,22 +3,13 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import React from "react";
 import { ArrowLeft, ArrowRight, Eye, LineChart } from "lucide-react";
-import { Manrope } from "next/font/google";
 import Circle from "@/components/Circle";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
-const manrope = Manrope({
-    subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700", "800"]
-});
 
-import { Urbanist } from 'next/font/google'
 
-const urbanist = Urbanist({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-})
+ 
 
 
 const AboutUs = () => {
@@ -165,7 +156,7 @@ const AboutUs = () => {
             {/* ✅ ADD TOAST HERE */}
             {toast && (
                 <div
-                    className={`${urbanist.className} fixed top-5 right-5 px-6 py-4 rounded-lg shadow-lg text-white z-50 transition-all duration-300 ${toast.type === "success" ? "bg-green-500" : ""} ${toast.type === "error" ? "bg-red-500" : ""} `}
+                    className={`  fixed top-5 right-5 px-6 py-4 rounded-lg shadow-lg text-white z-50 transition-all duration-300 ${toast.type === "success" ? "bg-green-500" : ""} ${toast.type === "error" ? "bg-red-500" : ""} `}
                 >
                     {toast.message}
                 </div>
@@ -174,7 +165,7 @@ const AboutUs = () => {
 
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/About-Us-Img-2.png"
+                        src="/About-Us-Img.png"
                         alt="About Us Page Background Image"
                         className="w-full h-full object-cover"
                     />
@@ -190,7 +181,7 @@ const AboutUs = () => {
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className={`${urbanist.className} text-6xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-1 md:mb-4 mt-60 md:mt-60`}
+                        className={`  text-6xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-1 md:mb-4 mt-60 md:mt-60`}
                     >
                         About <span className="bg-gradient-to-b from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent font-semibold">Techylla</span>
                     </motion.h2>
@@ -199,7 +190,7 @@ const AboutUs = () => {
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
-                        className={`${urbanist.className} text-md md:text-4xl font-light text-white tracking-wide leading-10 mb-20`}
+                        className={`  text-md md:text-4xl font-light text-white tracking-wide leading-10 mb-20`}
                     >
                         Data-driven. AI-powered. Future-ready.
                     </motion.h2>
@@ -230,7 +221,7 @@ const AboutUs = () => {
 
                         {/* Overlay Text */}
                         <div className="absolute top-2 md:-mt-15 md:-ml-5">
-                            <h2 className={`${urbanist.className} text-black text-6xl font-light`}>
+                            <h2 className={`  text-black text-6xl font-light`}>
                                 Our Story
                             </h2>
                         </div>
@@ -239,18 +230,18 @@ const AboutUs = () => {
                     {/* RIGHT CONTENT */}
                     <div className="mt-20 md:mt-0 md:-ml-10 max-w-xl">
 
-                        <p className={`${urbanist.className} text-xl text-gray-700 leading-relaxed mb-6`}>
+                        <p className={`  text-xl text-gray-700 leading-relaxed mb-6`}>
                             At Techylla, we don’t just work with data — we transform it into intelligence. Leveraging the power of analytics and AI, we enable businesses to think smarter, act faster, and stay ahead in a rapidly evolving world.
                         </p>
 
-                        <p className={`${urbanist.className} text-xl text-gray-700 leading-relaxed mb-8`}>
+                        <p className={`  text-xl text-gray-700 leading-relaxed mb-8`}>
                             Built on a foundation of trust, collaboration, and continuous innovation, we craft solutions that drive real impact, solve complex challenges, and redefine what’s possible in the digital era.
                         </p>
 
                         {/* BUTTON */}
                         <a
                             href="#leadership"
-                            className={`${urbanist.className} relative inline-flex items-center gap-2 font-semibold text-blue-900 group`}
+                            className={`  relative inline-flex items-center gap-2 font-semibold text-blue-900 group`}
                         >
                             Meet Our Leadership
                             <span className="text-blue-500 text-xl transition-transform group-hover:translate-x-1">
@@ -275,11 +266,11 @@ const AboutUs = () => {
                     >
                         <Eye className="w-20 h-20 text-blue-900 mb-6 opacity-90" />
 
-                        <h3 className={`${urbanist.className} text-3xl font-semibold text-blue-900 mb-4`}>
+                        <h3 className={`  text-3xl font-semibold text-blue-900 mb-4`}>
                             Vision
                         </h3>
 
-                        <p className={`${urbanist.className} text-gray-600 leading-relaxed max-w-md`}>
+                        <p className={`  text-gray-600 leading-relaxed max-w-md`}>
                             To unlock the true potential of data and AI, enabling businesses to transform ideas into intelligent, future-ready solutions.
                         </p>
                     </motion.div>
@@ -293,11 +284,11 @@ const AboutUs = () => {
                     >
                         <LineChart className="w-20 h-20 text-blue-900 mb-6 opacity-90" />
 
-                        <h3 className={`${urbanist.className} text-3xl font-semibold text-blue-900 mb-4`}>
+                        <h3 className={`  text-3xl font-semibold text-blue-900 mb-4`}>
                             Mission
                         </h3>
 
-                        <p className={`${urbanist.className} text-gray-600 leading-relaxed max-w-md`}>
+                        <p className={`  text-gray-600 leading-relaxed max-w-md`}>
                             To design and deliver scalable AI-powered systems that turn data into actionable insights, driving innovation, performance, and measurable success.
                         </p>
                     </motion.div>
@@ -311,11 +302,11 @@ const AboutUs = () => {
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, ease: "easeOut" }}
-                    viewport={{ once: true }} className={`${urbanist.className} text-blue-900 text-3xl md:text-4xl font-semibold mb-16`}>
+                    viewport={{ once: true }} className={`  text-blue-900 text-3xl md:text-4xl font-semibold mb-16`}>
                     The Techylla impact so far...
                 </motion.h2>
 
-                <div className={`${urbanist.className} grid md:grid-cols-4 justify-items-center`}>
+                <div className={`  grid md:grid-cols-4 justify-items-center`}>
 
                     <Circle
                         percentage={100}
@@ -345,7 +336,7 @@ const AboutUs = () => {
 
             </section>
 
-            <section className={`${urbanist.className} relative overflow-hidden min-h-screen w-full bg-gradient-to-br from-blue-100 via-white to-blue-100 py-20 px-6 md:px-16`}>
+            <section className={`  relative overflow-hidden min-h-screen w-full bg-gradient-to-br from-blue-100 via-white to-blue-100 py-20 px-6 md:px-16`}>
 
                 <img
                     src="/Bg Network Pattern.png"
@@ -444,7 +435,7 @@ const AboutUs = () => {
 
             </section >
 
-            <section aria-label="Leadership team" id="leadership" className={`${urbanist.className} bg-[#3a3a3a] min-h-screen py-15 px-6 md:px-16 text-white relative overflow-hidden`}>
+            <section aria-label="Leadership team" id="leadership" className={`  bg-[#3a3a3a] min-h-screen py-15 px-6 md:px-16 text-white relative overflow-hidden`}>
                 <ArrowRight className="absolute -top-140 -left-170 w-[1200px] h-[1200px] text-white opacity-15 pointer-events-none select-none" />
                 <ArrowLeft className="absolute -bottom-140 -right-170 w-[1200px] h-[1200px] text-white opacity-15 pointer-events-none select-none" />
 
@@ -615,11 +606,11 @@ const AboutUs = () => {
                         transition={{ duration: 0.7 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className={`${urbanist.className} text-5xl font-semibold text-black leading-tight mb-6 mt-10`}>
+                        <h2 className={`  text-5xl font-semibold text-black leading-tight mb-6 mt-10`}>
                             The <span className="font-bold text-blue-700"> Future </span> Starts with a Conversation
                         </h2>
 
-                        <p className={`${urbanist.className} text-gray-800 text-xl max-w-[700]`}>
+                        <p className={`  text-gray-800 text-xl max-w-[700]`}>
                             Get in touch and explore what we can build together.
                         </p>
                     </motion.div>
@@ -633,13 +624,13 @@ const AboutUs = () => {
                         className="mt-14"
                         onSubmit={handleSubmit}
                     >
-                        <h3 className={`${urbanist.className} text-2xl font-semibold mb-6`}>
+                        <h3 className={`  text-2xl font-semibold mb-6`}>
                             Send us your details
                         </h3>
 
                         {/* First Name */}
                         <div>
-                            <label className={`${urbanist.className} text-md font-medium text-slate-700`}>
+                            <label className={`  text-md font-medium text-slate-700`}>
                                 First Name <span className="text-orange-500">*</span>
                             </label>
                             <input
@@ -647,11 +638,11 @@ const AboutUs = () => {
                                 placeholder="Enter your first name"
                                 name="firstName"
                                 value={formData.firstName}
-                                className={`${urbanist.className} w-full mt-2 mb-5 border-b border-gray-300 focus:outline-none focus:border-blue-600  bg-transparent`}
+                                className={`  w-full mt-2 mb-5 border-b border-gray-300 focus:outline-none focus:border-blue-600  bg-transparent`}
                                 onChange={handleChange}
                             />
                             {errors.firstName && (
-                                <p className={`${urbanist.className} text-red-500 text-xs -mt-4 mb-4`}>
+                                <p className={`  text-red-500 text-xs -mt-4 mb-4`}>
                                     {errors.firstName}
                                 </p>
                             )}
@@ -659,7 +650,7 @@ const AboutUs = () => {
 
                         {/* Last Name */}
                         <div>
-                            <label className={`${urbanist.className} text-md font-medium text-slate-700`}>
+                            <label className={`  text-md font-medium text-slate-700`}>
                                 Last Name <span className="text-orange-500">*</span>
                             </label>
                             <input
@@ -667,11 +658,11 @@ const AboutUs = () => {
                                 placeholder="Enter your last name"
                                 name="lastName"
                                 value={formData.lastName}
-                                className={`${urbanist.className} w-full mt-2 mb-5 border-b border-gray-300 focus:outline-none focus:border-blue-600 bg-transparent`}
+                                className={`  w-full mt-2 mb-5 border-b border-gray-300 focus:outline-none focus:border-blue-600 bg-transparent`}
                                 onChange={handleChange}
                             />
                             {errors.lastName && (
-                                <p className={`${urbanist.className} text-red-500 text-xs -mt-4 mb-4`}>
+                                <p className={`  text-red-500 text-xs -mt-4 mb-4`}>
                                     {errors.lastName}
                                 </p>
                             )}
@@ -679,7 +670,7 @@ const AboutUs = () => {
 
                         {/* Email */}
                         <div>
-                            <label className={`${urbanist.className} text-md font-medium text-slate-700`}>
+                            <label className={`  text-md font-medium text-slate-700`}>
                                 Email <span className="text-orange-500">*</span>
                             </label>
                             <input
@@ -687,11 +678,11 @@ const AboutUs = () => {
                                 placeholder="Enter your email"
                                 name="email"
                                 value={formData.email}
-                                className={`${urbanist.className} w-full mt-2 mb-5 border-b border-gray-300 focus:outline-none focus:border-blue-600 bg-transparent`}
+                                className={`  w-full mt-2 mb-5 border-b border-gray-300 focus:outline-none focus:border-blue-600 bg-transparent`}
                                 onChange={handleChange}
                             />
                             {errors.email && (
-                                <p className={`${urbanist.className} text-red-500 text-xs -mt-4 mb-4`}>
+                                <p className={`  text-red-500 text-xs -mt-4 mb-4`}>
                                     {errors.email}
                                 </p>
                             )}
@@ -699,7 +690,7 @@ const AboutUs = () => {
 
                         {/* Contact */}
                         <div>
-                            <label className={`${urbanist.className} text-md font-medium text-slate-700`}>
+                            <label className={`  text-md font-medium text-slate-700`}>
                                 Contact Number <span className="text-orange-500">*</span>
                             </label>
                             <PhoneInput
@@ -721,7 +712,7 @@ const AboutUs = () => {
                                 containerClass="mt-2 mb-5"
                             />
                             {errors.contact && (
-                                <p className={`${urbanist.className} text-red-500 text-xs -mt-4 mb-4`}>
+                                <p className={`  text-red-500 text-xs -mt-4 mb-4`}>
                                     {errors.contact}
                                 </p>
                             )}
@@ -729,7 +720,7 @@ const AboutUs = () => {
 
                         {/* Organization */}
                         <div>
-                            <label className={`${urbanist.className} text-md font-medium text-slate-700`}>
+                            <label className={`  text-md font-medium text-slate-700`}>
                                 Organization <span className="text-orange-500">*</span>
                             </label>
 
@@ -738,12 +729,12 @@ const AboutUs = () => {
                                 placeholder="Enter your organization name"
                                 name="organization"
                                 value={formData.organization}
-                                className={`${urbanist.className} w-full mt-2 mb-5 border-b border-gray-300 focus:outline-none focus:border-blue-600 bg-transparent`}
+                                className={`  w-full mt-2 mb-5 border-b border-gray-300 focus:outline-none focus:border-blue-600 bg-transparent`}
                                 onChange={handleChange}
                             />
 
                             {errors.organization && (
-                                <p className={`${urbanist.className} text-red-500 text-xs -mt-4 mb-4`}>
+                                <p className={`  text-red-500 text-xs -mt-4 mb-4`}>
                                     {errors.organization}
                                 </p>
                             )}
@@ -751,7 +742,7 @@ const AboutUs = () => {
 
                         {/* How can we help */}
                         <div>
-                            <label className={`${urbanist.className} text-md font-medium text-slate-700`}>
+                            <label className={`  text-md font-medium text-slate-700`}>
                                 How can we help? <span className="text-orange-500">*</span>
                             </label>
 
@@ -760,12 +751,12 @@ const AboutUs = () => {
                                 name="help"
                                 value={formData.help}
                                 rows={3}
-                                className={`${urbanist.className} w-full mt-2 mb-5 border-b border-gray-300 focus:outline-none focus:border-blue-600 bg-transparent resize-none`}
+                                className={`  w-full mt-2 mb-5 border-b border-gray-300 focus:outline-none focus:border-blue-600 bg-transparent resize-none`}
                                 onChange={handleChange}
                             />
 
                             {errors.help && (
-                                <p className={`${urbanist.className} text-red-500 text-xs -mt-4 mb-4`}>
+                                <p className={`  text-red-500 text-xs -mt-4 mb-4`}>
                                     {errors.help}
                                 </p>
                             )}
@@ -776,7 +767,7 @@ const AboutUs = () => {
                             <button
                                 type="submit"
                                 disabled={loading}
-                                className={`${urbanist.className} border border-orange-500 text-orange-500 px-6 py-2 rounded hover:bg-orange-500 hover:text-white transition cursor-pointer flex items-center gap-2`}
+                                className={`  border border-orange-500 text-orange-500 px-6 py-2 rounded hover:bg-orange-500 hover:text-white transition cursor-pointer flex items-center gap-2`}
                             >
                                 {loading ? (
                                     <>
@@ -789,7 +780,7 @@ const AboutUs = () => {
                             </button>
 
                             {isSubmitted && Object.keys(errors).length > 0 && (
-                                <p className={`${urbanist.className} text-orange-700 text-sm border rounded border-orange-700 px-4 py-2`}>
+                                <p className={`  text-orange-700 text-sm border rounded border-orange-700 px-4 py-2`}>
                                     One or more fields have an error. Please check and try again.
                                 </p>
                             )}

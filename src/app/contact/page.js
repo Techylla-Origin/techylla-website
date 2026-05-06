@@ -1,21 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
-import { Manrope } from "next/font/google";
 import Script from "next/script";
 import { Mail, MapPin, Phone } from "lucide-react";
 
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"]
-});
 
-import { Urbanist } from 'next/font/google'
+ 
 
-const urbanist = Urbanist({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-})
+ 
 
 
 const ContactPage = () => {
@@ -44,7 +36,7 @@ const ContactPage = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className={`${urbanist.className} text-6xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 mt-60 md:mt-60`}
+            className={`  text-6xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 mt-60 md:mt-60`}
           >
             Contact <span className="bg-gradient-to-b from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent font-semibold">Us</span>
           </motion.h2>
@@ -53,7 +45,7 @@ const ContactPage = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
-            className={`${urbanist.className} text-md md:text-4xl font-light text-white tracking-wide leading-10 mb-20`}
+            className={`  text-md md:text-4xl font-light text-white tracking-wide leading-10 mb-20`}
           >
             Let’s Build Something Great Together
           </motion.h2>
@@ -85,11 +77,11 @@ const ContactPage = () => {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <h2 className={`${urbanist.className} text-5xl font-semibold text-black leading-tight mb-6 mt-10`}>
+            <h2 className={`  text-5xl font-semibold text-black leading-tight mb-6 mt-10`}>
               Have an Idea? Let’s Build It <span className="text-blue-800 font-bold">Together</span> 
             </h2>
 
-            <p className={`${urbanist.className} text-gray-800 text-xl max-w-[700]`}>
+            <p className={`  text-gray-800 text-xl max-w-[700]`}>
               From concept to reality, we make it happen.
             </p>
           </motion.div>
@@ -97,7 +89,7 @@ const ContactPage = () => {
           {/* RIGHT SIDE FORM */}
           <div className="relative mt-10 p-6 sm:p-8 rounded-xl shadow-lg bg-white overflow-hidden">
 
-            <h3 className={`${urbanist.className} text-2xl sm:text-3xl font-semibold mb-4`}>
+            <h3 className={`  text-2xl sm:text-3xl font-semibold mb-4`}>
               Send us your details
             </h3>
 
@@ -149,7 +141,7 @@ const ContactPage = () => {
 
             {/* Overlay Text */}
             <div className="absolute ml-0 md:-ml-5">
-              <h2 className={`${urbanist.className} text-black text-6xl font-light`}>
+              <h2 className={`  text-black text-6xl font-light`}>
                 Reach Out To <span className="bg-gradient-to-b from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent font-medium">Techylla</span>
               </h2>
             </div>
@@ -162,7 +154,7 @@ const ContactPage = () => {
             <div className="flex items-start gap-4">
               <MapPin className="text-orange-500 w-8 h-8 mt-1" />
 
-              <div className={`${urbanist.className} space-y-3 text-blue-900 font-bold text-lg`}>
+              <div className={`  space-y-3 text-blue-900 font-bold text-lg`}>
                 <p>Kolkata, India</p>
                 <p>116 Village Blvd Suite 200, Princeton, NJ 08540</p>
 
@@ -172,14 +164,14 @@ const ContactPage = () => {
             {/* EMAIL */}
             <div className="flex items-center gap-4">
               <Mail className="text-orange-500 w-8 h-8" />
-              <p className={`${urbanist.className} text-blue-900 font-bold text-lg`}>sales@techylla.com</p>
+              <p className={`  text-blue-900 font-bold text-lg`}>sales@techylla.com</p>
             </div>
 
             {/* PHONE */}
             <div className="flex items-start gap-4">
               <Phone className="text-orange-500 w-8 h-8 mt-1" />
 
-              <div className={`${urbanist.className} text-blue-900 font-bold text-lg space-y-2`}>
+              <div className={`  text-blue-900 font-bold text-lg space-y-2`}>
                 <p>USA: +1 (732) 208-4788</p>
                 <p>India: +91 98311 69927</p>
               </div>

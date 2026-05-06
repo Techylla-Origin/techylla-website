@@ -2,20 +2,12 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import { Manrope } from "next/font/google";
 import Script from "next/script";
 
-const manrope = Manrope({
-    subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700", "800"]
-});
 
-import { Urbanist } from 'next/font/google'
 
-const urbanist = Urbanist({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-})
+
+
 
 
 const Careers = () => {
@@ -28,7 +20,7 @@ const Careers = () => {
 
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/Careers Bg1.jpg"
+                        src="/Careers-Page.png"
                         alt="Careers Page Background Image"
                         className="w-full h-full object-cover"
                     />
@@ -44,7 +36,7 @@ const Careers = () => {
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className={`${urbanist.className} text-6xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 mt-60 md:mt-60`}
+                        className={`  text-6xl md:text-7xl font-semibold text-white tracking-tight leading-tight mb-4 mt-60 md:mt-60`}
                     >
                         Career @ <span className="bg-gradient-to-b from-blue-700 via-blue-600 to-blue-300 bg-clip-text text-transparent font-semibold">Techylla</span>
                     </motion.h2>
@@ -53,7 +45,7 @@ const Careers = () => {
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
-                        className={`${urbanist.className} text-md md:text-4xl font-light text-white tracking-wide leading-10 mb-20`}
+                        className={`  text-md md:text-4xl font-light text-white tracking-wide leading-10 mb-20`}
                     >
                         Drive Change, Shape The Future with Data
                     </motion.h2>
@@ -81,16 +73,16 @@ const Careers = () => {
                         className="relative"
                     >
                         <Image
-                            src="/Careers Bg2.jpg" // replace with your image
+                            src="/Career-Page-2.png" // replace with your image
                             alt="Team collaboration and work culture at Techylla"
                             width={390}
                             height={500}
-                            className="rounded-lg object-cover mt-40 md:mt-30"
+                            className="rounded-lg object-cover mt-50 md:mt-30"
                         />
 
                         {/* Overlay Text */}
-                        <div className="absolute top-6 -ml-5">
-                            <h2 className={`${urbanist.className} text-black text-6xl font-light`}>
+                        <div className="absolute top-6 ">
+                            <h2 className={`  text-black text-6xl font-light`}>
                                 Why choose us?
                             </h2>
                         </div>
@@ -124,10 +116,10 @@ const Careers = () => {
                                 transition={{ delay: i * 0.2, duration: 0.6 }}
                                 viewport={{ once: true }}
                             >
-                                <h3 className={`${urbanist.className} text-2xl md:text-3xl font-medium mb-2`}>
+                                <h3 className={`  text-2xl md:text-3xl font-medium mb-2`}>
                                     {item.title}
                                 </h3>
-                                <p className={`${urbanist.className} text-gray-700 mb-4`}>{item.desc}</p>
+                                <p className={`  text-gray-700 mb-4`}>{item.desc}</p>
 
                                 {i !== 3 && (
                                     <div className="border-b border-gray-300 mt-6"></div>
@@ -138,7 +130,140 @@ const Careers = () => {
                     </div>
                 </div>
             </section>
-            <section aria-label="Join Techylla careers form" className="relative bg-gradient-to-br from-blue-100 via-white to-blue-100 px-6 md:px-12 overflow-hidden min-h-screen">
+
+            <section id="active-jobs" className="w-full py-10 px-6 md:px-12 bg-black/90 text-white">
+                <div className="max-w-5xl mx-auto">
+
+                    {/* Heading */}
+                    <div className="mb-14">
+                        <h2 className="text-6xl md:text-6xl font-light">
+                            Active Jobs
+                        </h2>
+                    </div>
+
+                    {/* Cards */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+                        {/* Card 1 */}
+                        <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.06] hover:bg-black p-7 backdrop-blur-2xl transition-all duration-500 hover:-translate-y-2 hover:border-white/50 hover:shadow-[0_20px_60px_rgba(59,130,246,0.25)] group">
+
+                            {/* Background Glow */}
+                            <div className="absolute -top-16 -right-16 h-40 w-40 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-500" />
+
+                            {/* Top Section */}
+                            <div className="relative z-10 flex items-center justify-between mb-5">
+                                <span className="text-sm tracking-[0.2em] uppercase text-zinc-200">
+                                    ID-001
+                                </span>
+
+                                <span className="text-xs bg-blue-700 border border-blue-500/20 text-white px-4 py-1.5 rounded-full backdrop-blur-md tracking-wide font-normal">
+                                    Full Time
+                                </span>
+                            </div>
+
+                            {/* Title */}
+                            <h3 className="relative z-10 text-2xl font-semibold text-white mb-4">
+                                Frontend Developer
+                            </h3>
+
+                            {/* Description */}
+                            <p className="relative z-10 text-zinc-300 leading-relaxed mb-8">
+                                Build responsive and modern user interfaces using React,
+                                Next.js, and Tailwind CSS while collaborating with the design team.
+                            </p>
+
+                            {/* Bottom */}
+                            <div className="relative z-10 flex items-center justify-between">
+                                <div className="flex items-center gap-2">
+                                    <div className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
+                                    <span className="text-sm text-zinc-400">
+                                        Hiring Active
+                                    </span>
+                                </div>
+
+                                <button
+                                    onClick={() =>
+                                        document
+                                            .getElementById("application-form")
+                                            ?.scrollIntoView({ behavior: "smooth" })
+                                    }
+                                    className="rounded-2xl bg-blue-600 px-5 py-3 text-sm font-medium text-white transition-all duration-300 hover:scale-105 hover:bg-blue-800 hover:shadow-[0_10px_30px_rgba(59,130,246,0.2)] cursor-pointer"
+                                >
+                                    Apply Now
+                                </button>
+                            </div>
+
+                            {/* Shine Effect */}
+                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <div className="absolute top-0 left-[-30%] h-full w-[120px] rotate-12 bg-white/10 blur-2xl" />
+                            </div>
+                        </div>
+
+                        {/* Card 2 */}
+                        {/* <div className="bg-white/5 border border-white/10 rounded-3xl p-7 backdrop-blur-sm hover:border-blue-500/40 transition-all duration-300">
+                            <div className="flex items-center justify-between mb-5">
+                                <span className="text-sm text-zinc-400">JOB-002</span>
+                                <span className="text-xs bg-purple-500/20 text-purple-400 px-3 py-1 rounded-full">
+                                    Remote
+                                </span>
+                            </div>
+
+                            <h3 className="text-2xl font-semibold mb-4">
+                                UI/UX Designer
+                            </h3>
+
+                            <p className="text-zinc-400 leading-relaxed mb-8">
+                                Design intuitive and visually engaging user experiences
+                                for modern web applications and digital platforms.
+                            </p>
+
+                            <button
+                                onClick={() =>
+                                    document
+                                        .getElementById("application-form")
+                                        ?.scrollIntoView({ behavior: "smooth" })
+                                }
+                                className="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-500 transition-all duration-300 font-medium"
+                            >
+                                Apply Now
+                            </button>
+                        </div> */}
+
+                        {/* Card 3 */}
+                        {/* <div className="bg-white/5 border border-white/10 rounded-3xl p-7 backdrop-blur-sm hover:border-blue-500/40 transition-all duration-300">
+                            <div className="flex items-center justify-between mb-5">
+                                <span className="text-sm text-zinc-400">JOB-003</span>
+                                <span className="text-xs bg-green-500/20 text-green-400 px-3 py-1 rounded-full">
+                                    Internship
+                                </span>
+                            </div>
+
+                            <h3 className="text-2xl font-semibold mb-4">
+                                MERN Stack Developer
+                            </h3>
+
+                            <p className="text-zinc-400 leading-relaxed mb-8">
+                                Work on scalable full-stack applications using MongoDB,
+                                Express.js, React, and Node.js technologies.
+                            </p>
+
+                            <button
+                                onClick={() =>
+                                    document
+                                        .getElementById("application-form")
+                                        ?.scrollIntoView({ behavior: "smooth" })
+                                }
+                                className="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-500 transition-all duration-300 font-medium"
+                            >
+                                Apply Now
+                            </button>
+                        </div> */}
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="application-form" aria-label="Join Techylla careers form" className="relative bg-gradient-to-br from-blue-100 via-white to-blue-100 px-6 md:px-12 overflow-hidden min-h-screen">
 
                 {/* Background Pattern */}
                 <img
@@ -159,11 +284,11 @@ const Careers = () => {
                         transition={{ duration: 0.7 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className={`${urbanist.className} text-5xl font-semibold text-black leading-tight mb-6 mt-10`}>
+                        <h2 className={`  text-5xl font-semibold text-black leading-tight mb-6 mt-10`}>
                             Join <span className="text-blue-800 font-bold">Techylla</span> and shape the future of Data and AI
                         </h2>
 
-                        <p className={`${urbanist.className} text-gray-800 text-xl max-w-[700]`}>
+                        <p className={`  text-gray-800 text-xl max-w-[700]`}>
                             Where your skills create impact, and your growth never stops.
                         </p>
                     </motion.div>
@@ -171,7 +296,7 @@ const Careers = () => {
                     {/* RIGHT SIDE FORM */}
                     <div className="relative mt-10 p-6 sm:p-8 rounded-xl shadow-lg bg-white overflow-hidden">
 
-                        <h3 className={`${urbanist.className} text-2xl sm:text-3xl font-semibold mb-4`}>
+                        <h3 className={`  text-2xl sm:text-3xl font-semibold mb-4`}>
                             Send us your details
                         </h3>
 

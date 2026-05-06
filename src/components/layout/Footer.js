@@ -1,19 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { Manrope } from "next/font/google";
 
-const manrope = Manrope({
-    subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700", "800"]
-});
+ 
 
-import { Urbanist } from 'next/font/google'
-
-const urbanist = Urbanist({
-    subsets: ['latin'],
-    weight: ['300', '400', '500', '600', '700'],
-})
+ 
 
 export default function Footer() {
     return (
@@ -25,14 +16,14 @@ export default function Footer() {
                 <div className="grid md:grid-cols-2 gap-12">
 
                     {/* LEFT SIDE */}
-                    <div className={`${urbanist.className} mt-10 md:mt-15`}>
-                        <h2 className={`${urbanist.className} text-7xl font-medium tracking-tight leading-tight mb-10`}>
+                    <div className={`  mt-10 md:mt-15`}>
+                        <h2 className={`  text-7xl font-medium tracking-tight leading-tight mb-10`}>
                             Think Data <br />
                             Think{" "}
                             <Link href="/">
                                 <img
                                     src="/SampleLogo.png"
-                                    alt="Techylla Logo"
+                                    alt="Techylla — AI & Digital Transformation"
                                     className="w-70 inline-block align-middle"
                                 />
                             </Link>
@@ -54,7 +45,7 @@ export default function Footer() {
                             </Link>
                         </div>
 
-                        <div className={`${urbanist.className} grid grid-cols-2 gap-y-2 gap-x-4 md:gap-x-0 text-sm text-gray-200 mt-6 -mb-8 ml-2`}>
+                        <div className={`  grid grid-cols-2 gap-y-2 gap-x-4 md:gap-x-0 text-sm text-gray-200 mt-6 -mb-8 ml-2`}>
 
                             {/* INDIA */}
                             {/* <p className="font-semibold text-white">India Office:</p>
@@ -99,7 +90,7 @@ export default function Footer() {
                     </div>
 
                     {/* RIGHT SIDE */}
-                    <div className={`${urbanist.className} text-white text-sm mt-10 md:mt-20 md:-ml-20`}>
+                    <div className={`  text-white text-sm mt-10 md:mt-20 md:-ml-20`}>
 
                         {/* TOP GRID (3 COLUMNS) */}
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
@@ -191,7 +182,7 @@ export default function Footer() {
 
                 </div>
 
-                <div className={`${urbanist.className} mt-12 w-[99%] max-w-[1320px] mx-auto`}>
+                <div className={`  mt-12 w-[99%] max-w-[1320px] mx-auto`}>
 
                     <div className="border-t border-white/20"></div>
 
