@@ -3,10 +3,6 @@
 import React from "react";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
- 
-
- 
-
 const partners = [
   { name: "AWS", logo: "/aws.svg", width: "w-40", height: "h-20" },
   { name: "Databricks", logo: "/databricks.png", width: "w-60", height: "h-25" },

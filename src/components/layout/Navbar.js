@@ -118,10 +118,10 @@ export default function Navbar() {
             className={`fixed top-0 w-full bg-gradient-to-br from-white/90 via-white to-blue-200/70 backdrop-blur-md z-50 transition-transform duration-500 ease-in-out will-change-transform ${showNavbar ? "translate-y-0" : "-translate-y-full"
                 }`}
         >
-            <nav aria-label="Global" className={`mx-auto flex w-full items-center justify-between p-3 lg:px-1 ${isHome ? "bg-transparent text-white" : "bg-white text-white"
+            <nav aria-label="Global" className={`max-w-7xl mx-auto flex w-full items-center justify-between px-6 py-3 ${isHome ? "bg-transparent text-white" : "bg-white text-white"
                 }`}>
                 <div className="flex ">
-                    <a href="/" className="text-3xl font-semibold text-white md:ml-20">
+                    <a href="/" className="text-3xl font-semibold text-white">
 
 
                         <img

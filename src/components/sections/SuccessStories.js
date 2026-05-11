@@ -4,16 +4,8 @@ import Link from "next/link";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
-
-
-
-
 import "swiper/css";
 import "swiper/css/pagination";
-
- 
-
- ;
 
 export default function SuccessStories() {
 
@@ -51,24 +43,36 @@ export default function SuccessStories() {
     ];
 
     return (
-        <section className="min-h-screen md:h-screen bg-gray-100 py-10 overflow-hidden">
+        <section className="min-h-screen bg-gray-200 py-10 overflow-hidden">
 
             <div className="max-w-7xl mx-auto px-6">
 
-                <h2 className={`  md:text-6xl text-5xl font-light tracking-tight leading-tight md:mb-16 mb-12`}>
+                <h2 className={`md:text-6xl text-5xl font-light tracking-tight leading-tight md:mb-16 mb-12`}>
                     Success Stories
                 </h2>
 
             </div>
 
-            <div className={`  w-full px-6`}>
+            <div className={`w-full px-6`}>
 
                 <Swiper
                     modules={[Autoplay, Pagination]}
                     slidesPerView={1.1}
                     spaceBetween={16}
                     breakpoints={{
+                        320: {
+                            slidesPerView: 1.1,
+                            spaceBetween: 16,
+                        },
+                        640: {
+                            slidesPerView: 1.5,
+                            spaceBetween: 20,
+                        },
                         768: {
+                            slidesPerView: 2,
+                            spaceBetween: 24,
+                        },
+                        1024: {
                             slidesPerView: 3,
                             spaceBetween: 40,
                         },
@@ -91,37 +95,24 @@ export default function SuccessStories() {
 
                         <SwiperSlide key={i} className="transition-transform duration-500">
 
-                            <div className="group relative bg-white rounded-md overflow-hidden shadow-lg duration-500 h-[350] md:h-[450]">
+                            <div className="group relative bg-white rounded-md overflow-hidden shadow-lg duration-500 h-[320px] md:h-auto flex flex-col">
 
                                 {/* Image */}
-                                <div className="aspect-5/4 overflow-hidden relative z-20 transition-all duration-700 group-hover:h-full inset-0 ease-in-out">
+                                <div className="aspect-5/4 overflow-hidden relative z-20 transition-all duration-700 inset-0 ease-in-out">
 
                                     <img
                                         src={story.image}
                                         alt={`${story.title} case study visual`}
-                                        className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                                        className="w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:grayscale-70 grayscale-0 group-hover:blur-[1px]"
                                     />
-
-                                    {/* Dark overlay */}
-                                    <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out"></div>
 
                                     {/* Read More Button */}
                                     <Link href={`/case-studies/${story.slug}`}>
-                                        <div className="absolute inset-0 flex ml-10 mb-10 items-baseline-last justify-start opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-transform duration-700 ease-in-out ">
-                                            {/* Content */}
-                                            <div className="text-white max-w-[65%]">
+                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-transform duration-700 ease-in-out ">
 
-                                                <p className="font-semibold tracking-wide text-lg leading-snug">
-                                                    {story.title}
-                                                </p>
-
-                                                <div className="mt-4 bg-blue-700 px-7 py-3 rounded-[4] text-sm tracking-widest font-medium inline-block cursor-pointer">
-                                                    KNOW MORE
-                                                </div>
-
+                                            <div className="text-white tracking-wide inline-block bg-[#FF4700] px-3 py-2 md:px-7 md:py-3 rounded-md text-md transition font-normal cursor-pointer">
+                                                Know More
                                             </div>
-
-
 
                                         </div>
                                     </Link>
@@ -130,13 +121,13 @@ export default function SuccessStories() {
 
 
                                 {/* Content */}
-                                <div className="p-4 flex flex-col gap-4 relative z-0">
+                                <div className="p-4 flex flex-col justify-start flex-1 relative z-0 min-h-[110px]">
 
-                                    <h3 className="text-black font-light tracking-normal text-lg leading-snug">
+                                    <h3 className="text-black font-light tracking-normal text-md md:text-lg leading-snug">
                                         {story.title}
                                     </h3>
 
-                                </div>
+                                </div> 
 
                             </div>
 
@@ -169,7 +160,6 @@ export default function SuccessStories() {
         }
 
         .successSwiper {
-            padding-bottom: 30px;
             overflow: visible !important;
         }
 

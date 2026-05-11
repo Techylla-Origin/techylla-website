@@ -4,10 +4,6 @@ import React from "react";
 import CardSwap, { Card } from "@/components/CardSwap";
 import { BuildingOffice2Icon, ChartBarIcon, CodeBracketIcon, SparklesIcon } from "@heroicons/react/20/solid";
 
- 
-
- 
-
 const WhatWeDo = () => {
     return (
         <section className="relative bg-white py-10 md:py-20 min-h-screen overflow-hidden">
