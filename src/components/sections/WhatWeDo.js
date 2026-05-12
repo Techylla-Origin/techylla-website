@@ -14,13 +14,13 @@ const WhatWeDo = () => {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_#93c5fd_0%,_#475569_28%,_#1e293b_58%,_#0f172a_82%,_#020617_100%)]"></div>
 
                 {/* Subtle white glow */}
-                <div className="absolute top-0 left-0 w-[35rem] h-[35rem] bg-white/8 blur-3xl rounded-full"></div>
+                <div className="absolute top-0 left-0 w-[35rem] h-[35rem] bg-white/5 blur-3xl rounded-full"></div>
 
                 {/* Deep blue ambient glow */}
                 <div className="absolute bottom-0 right-0 w-[30rem] h-[30rem] bg-blue-500/10 blur-3xl rounded-full"></div>
 
                 {/* Dark cinematic overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/40"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/20 to-black/40"></div>
 
             </div>
 
@@ -38,10 +38,10 @@ const WhatWeDo = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
 
                         {/* Card 1 */}
-                        <div className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.06] backdrop-blur-xl p-7 md:p-10 transition-all duration-500 hover:-translate-y-2 hover:border-blue-200/20 hover:bg-black/[0.9] hover:shadow-[0_20px_80px_rgba(29,78,216,0.15)]">
+                        <div className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.06] backdrop-blur-xl p-7 md:p-10  hover:-translate-y-2 hover:bg-gradient-to-br hover:from-white/10 hover:via-black hover:to-blue-800 hover:border-white/20 transition-all duration-500">
 
                             {/* Glow */}
-                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_top_right,rgba(29,78,216,0.55),transparent_40%)]"></div>
+                            {/* <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_top_right,rgba(29,78,216,0.55),transparent_40%)]"></div> */}
 
                             {/* Number */}
                             {/* <div className="absolute top-6 right-6 text-white/10 text-5xl md:text-6xl font-light">
