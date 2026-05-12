@@ -252,9 +252,9 @@ const ThoughtLeadership = () => {
                                         <Link href={activeLeader.link}>
                                             <motion.button
                                                 whileTap={{ scale: 0.95 }}
-                                                className={` bg-[#FF4700] text-white px-3 py-2 md:px-7 md:py-2 font-normal rounded-md tracking-wide text-[10px] md:text-[15px] border-b border-transparent hover:text-black hover:border-black duration-500 cursor-pointer whitespace-nowrap`}
+                                                className={` bg-[#FF4700] text-white px-3 py-2 md:px-7 md:py-2 font-normal rounded-md tracking-wide hover:scale-105 text-[10px] md:text-[15px] border-b border-transparent hover:border-black duration-400 cursor-pointer whitespace-nowrap`}
                                             >
-                                                Read More
+                                                Read more
                                             </motion.button>
                                         </Link>
                                     )}
@@ -263,7 +263,7 @@ const ThoughtLeadership = () => {
                                         <Link href={activeLeader.caseStudyLink}>
                                             <motion.button
                                                 whileTap={{ scale: 0.95 }}
-                                                className={`  bg-black md:bg-transparent text-white md:text-black font-normal px-1 py-2 md:px-7 md:py-2 rounded-md tracking-tight text-[10px] md:text-[15px] border border-black hover:border-[#FF4700] hover:bg-[#FF4700] hover:text-white duration-500 cursor-pointer whitespace-nowrap`}
+                                                className={`  bg-black md:bg-transparent text-white md:text-black font-normal px-1 py-2 md:px-7 md:py-2 rounded-md tracking-tight hover:scale-105 text-[10px] md:text-[15px] border border-black hover:border-[#FF4700] hover:bg-[#FF4700] hover:text-white duration-400 cursor-pointer whitespace-nowrap`}
                                             >
                                                 Review the Tariff Simulation Model
                                             </motion.button>

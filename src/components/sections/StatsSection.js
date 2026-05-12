@@ -25,7 +25,7 @@ export default function StatsSection() {
                             <button
                                 aria-label="Learn more about our services and capabilities"
                                 className="mt-8 bg-[#FF4700]/90 px-5 py-2 md:px-9 md:py-3 text-md rounded-md tracking-wide cursor-pointer">
-                                Know More
+                                Know more
                             </button>
                         </Link>
                     </div>

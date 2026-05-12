@@ -6,165 +6,158 @@ import { BuildingOffice2Icon, ChartBarIcon, CodeBracketIcon, SparklesIcon } from
 
 const WhatWeDo = () => {
     return (
-        <section className="relative bg-white py-10 md:py-20 min-h-screen overflow-hidden">
+        <section className="relative bg-white py-10 md:py-10 min-h-screen overflow-hidden">
 
             <div className="absolute inset-0 z-0">
-                <img
-                    src="/WhatWeDo Bg1.png"
-                    alt="Background showing modern workspace related to data and technology"
-                    className="w-full h-full object-cover"
-                />
 
-                {/* Dark overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/30 md:from-black/10 md:via-black/10 md:to-black/10"></div>
+                {/* Main premium dark gradient */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_#93c5fd_0%,_#475569_28%,_#1e293b_58%,_#0f172a_82%,_#020617_100%)]"></div>
+
+                {/* Subtle white glow */}
+                <div className="absolute top-0 left-0 w-[35rem] h-[35rem] bg-white/8 blur-3xl rounded-full"></div>
+
+                {/* Deep blue ambient glow */}
+                <div className="absolute bottom-0 right-0 w-[30rem] h-[30rem] bg-blue-500/10 blur-3xl rounded-full"></div>
+
+                {/* Dark cinematic overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/40"></div>
+
             </div>
 
-            
+
 
             <div className="relative max-w-7xl z-20 mx-auto px-6 bg-cover">
 
-                <h2 className={`  text-5xl md:text-6xl font-light text-white  tracking-tight leading-tight mb-20`}>
+                <h2 className={`text-5xl md:text-6xl font-light text-white tracking-tight leading-tight mb-10`}>
                     What We Do
                 </h2>
 
-                {/* IMPORTANT WRAPPER */}
-                <div className={`  h-75 relative flex justify-center mt-10 md:mt-40 -translate-x-30 md:translate-x-0`}>
+                {/* Premium Responsive Cards */}
+                <div className="relative mt-12 md:mt-10">
 
-                    <CardSwap
-                        cardDistance={70}
-                        verticalDistance={80}
-                        delay={4000}
-                        skewAmount={1}
-                        width={700}
-                        pauseOnHover={true} 
-                    >
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
 
-                        <Card className="bg-[#0b0618] border border-white/30 rounded-[28px] w-130 overflow-hidden">
+                        {/* Card 1 */}
+                        <div className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.06] backdrop-blur-xl p-7 md:p-10 transition-all duration-500 hover:-translate-y-2 hover:border-blue-200/20 hover:bg-black/[0.9] hover:shadow-[0_20px_80px_rgba(29,78,216,0.15)]">
 
-                            <div className="flex items-center gap-3 px-5 py-3 border-b bg-blue-100 border-white/200 text-black text-xl">
-                                <ChartBarIcon className="w-5 h-5 text-black" />
-                                
-                                Data Driven Analytics
+                            {/* Glow */}
+                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_top_right,rgba(29,78,216,0.55),transparent_40%)]"></div>
+
+                            {/* Number */}
+                            {/* <div className="absolute top-6 right-6 text-white/10 text-5xl md:text-6xl font-light">
+                                01
+                            </div> */}
+
+                            {/* Icon */}
+                            <div className="relative flex items-center gap-5 mb-8">
+
+                                <div className="relative w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-blue-100/10 border border-white/10 flex items-center justify-center shrink-0">
+                                    <ChartBarIcon className="w-7 h-7 text-blue-200" />
+                                </div>
+
+                                <h3 className="relative text-2xl md:text-3xl font-light text-white tracking-normal leading-tight">
+                                    Data Driven Analytics
+                                </h3>
+
                             </div>
 
-                            <div className={`  font-normal p-10 text-white`}>
-                                Reveal latent intelligence:
+                            <p className="relative text-white/70 leading-relaxed text-sm md:text-base">
+                                Leverage advanced analytics and real-time insights to optimize operations, predict demand changes, reduce costs, and build smarter, more resilient business strategies.
+                            </p>
 
-                                Our data-driven analytics enables us to analyze massive volumes of supply chain data,
+                            <div className="mt-8 h-px w-full bg-gradient-to-r from-blue-300/40 via-white/10 to-transparent"></div>
+                        </div>
 
-                                revealing patterns and trends that would be impossible to detect manually.
+                        {/* Card 2 */}
+                        <div className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.06] backdrop-blur-xl p-7 md:p-10 transition-all duration-500 hover:-translate-y-2 hover:border-blue-200/20 hover:bg-black/[0.9] hover:shadow-[0_20px_80px_rgba(29,78,216,0.15)]">
 
-                                <br />
-                                <br />
+                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_top_right,rgba(29,78,216,0.55),transparent_40%)]"></div>
 
-                                Improves decision-making:
+                            {/* <div className="absolute top-6 right-6 text-white/10 text-5xl md:text-6xl font-light">
+                                02
+                            </div> */}
 
-                                Data-driven analytics allows for more proactive decision-making by delivering real-time data and insights.
+                            <div className="relative flex items-center gap-5 mb-8">
 
-                                Inventory levels get optimized, demand changes predicted, and cost-saving possibilities identified across the supply chain.
+                                <div className="relative w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-blue-100/10 border border-white/10 flex items-center justify-center shrink-0">
+                                    <BuildingOffice2Icon className="w-7 h-7 text-blue-200" />
+                                </div>
 
-                                <br />
-                                <br />
+                                <h3 className="relative text-2xl md:text-3xl font-light text-white tracking-normal leading-tight">
+                                    SAP & Business Analytics
+                                </h3>
 
-                                Enhances agility and resilience:
-
-                                Data allows us to predict and respond promptly to interruptions.
-
-                                Predictive analytics can detect possible problems.
                             </div>
 
-                        </Card>
+                            <p className="relative text-white/70 leading-relaxed text-sm md:text-base">
+                                We combine SAP expertise with intelligent business analytics to uncover bottlenecks,
+                                streamline workflows, optimize supply chains, and transform enterprise data into
+                                actionable business decisions.
+                            </p>
 
-                        <Card className="bg-[#0b0618] border border-white/30 rounded-[28px] w-130 overflow-hidden">
+                            <div className="mt-8 h-px w-full bg-gradient-to-r from-blue-300/40 via-white/10 to-transparent"></div>
+                        </div>
 
-                            <div className="flex items-center gap-3 px-5 py-3 border-b border-white/20 text-blue-100 text-xl">
-                                <BuildingOffice2Icon className="w-6 h-6 text-blue-100" />
-                                {/* <span className="w-3 h-3 rounded-full bg-blue-100"></span> */}
-                                SAP and Business Analytics
+                        {/* Card 3 */}
+                        <div className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.06] backdrop-blur-xl p-7 md:p-10 transition-all duration-500 hover:-translate-y-2 hover:border-blue-200/20 hover:bg-black/[0.9] hover:shadow-[0_20px_80px_rgba(29,78,216,0.15)]">
+
+                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_top_right,rgba(29,78,216,0.55),transparent_40%)]"></div>
+
+                            {/* <div className="absolute top-6 right-6 text-white/10 text-5xl md:text-6xl font-light">
+                                03
+                            </div> */}
+
+                            <div className="relative flex items-center gap-5 mb-8">
+
+                                <div className="relative w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-blue-100/10 border border-white/10 flex items-center justify-center shrink-0">
+                                    <CodeBracketIcon className="w-7 h-7 text-blue-200" />
+                                </div>
+
+                                <h3 className="relative text-2xl md:text-3xl font-light text-white tracking-normal leading-tight">
+                                    Application Management Service
+                                </h3>
+
                             </div>
 
-                            <div className={`  font-normal p-10 text-black bg-blue-100 h-90`}>
-                                Expertise in SAP Functional Areas :
+                            <p className="relative text-white/70 leading-relaxed text-sm md:text-base">
+                                From agile data integration to AI-powered operational insights, we provide scalable
+                                application management and consulting solutions that improve efficiency, flexibility,
+                                and long-term business growth.
+                            </p>
 
-                                Including S/4HANA and supply chain functions, may
+                            <div className="mt-8 h-px w-full bg-gradient-to-r from-blue-300/40 via-white/10 to-transparent"></div>
+                        </div>
 
-                                be used to extract and analyze relevant data.
+                        {/* Card 4 */}
+                        <div className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.06] backdrop-blur-xl p-7 md:p-10 transition-all duration-500 hover:-translate-y-2 hover:border-blue-200/20 hover:bg-black/[0.9] hover:shadow-[0_20px_80px_rgba(29,78,216,0.15)]">
 
-                                <br />
-                                <br />
-                                Business analytics proficiency:
+                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_top_right,rgba(29,78,216,0.55),transparent_40%)]"></div>
 
-                                This involves analyzing supply chain data to find patterns, bottlenecks, and optimisation possibilities.
+                            {/* <div className="absolute top-6 right-6 text-white/10 text-5xl md:text-6xl font-light">
+                                04
+                            </div> */}
 
-                                <br />
-                                <br />
-                                Actionable Supply Chain Analytics:
+                            <div className="relative flex items-center gap-5 mb-8">
 
-                                Transform data insights into practical advice for increasing supply chain efficiency, lowering costs, and mitigating risk.
+                                <div className="relative w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-blue-100/10 border border-white/10 flex items-center justify-center shrink-0">
+                                    <SparklesIcon className="w-7 h-7 text-blue-200" />
+                                </div>
+
+                                <h3 className="relative text-2xl md:text-3xl font-light text-white tracking-normal leading-tight">
+                                    AI-Led Data Engineering
+                                </h3>
+
                             </div>
 
-                        </Card>
+                            <p className="relative text-white/70 leading-relaxed text-sm md:text-base">
+                                We design intelligent data platforms and scalable AI-ready infrastructures that
+                                automate processing, improve accessibility, and unlock the full value of enterprise data.
+                            </p>
 
-                        <Card className="bg-[#0b0618] border border-white/30 rounded-[28px] w-130 overflow-hidden">
+                            <div className="mt-8 h-px w-full bg-gradient-to-r from-blue-300/40 via-white/10 to-transparent"></div>
+                        </div>
 
-                            <div className="flex items-center gap-3 px-5 py-3 bg-blue-100 border-b border-white/20 text-black text-xl">
-                                <CodeBracketIcon className="w-6 h-6 text-black" />
-                                {/* <span className="w-3 h-3 rounded-full bg-black"></span> */}
-                                Application Management Service
-                            </div>
-
-                            <div className={`  font-normal p-10 text-white`}>
-                                Agile Data Integration :
-
-                                We integrate data seamlessly from multiple sources within the SAP ecosystem using agile methodologies. This enables faster analysis and better decision-making.
-
-                                <br />
-                                <br />
-
-                                AI and ML Powered Insights :
-
-                                Advanced machine learning and AI help transform complex data into meaningful insights. This allows businesses to identify patterns and optimize operations.
-
-                                <br />
-                                <br />
-
-                                Technology Consulting and Data Solutions :
-
-                                We provide expert data management and technology consulting tailored to business needs. Our solutions help improve efficiency and scalability.
-                            </div>
-
-                        </Card>
-                        <Card className="bg-[#0b0618] border border-white/30 rounded-[28px] w-130 overflow-hidden">
-
-                            <div className="flex items-center gap-3 px-5 py-3 border-b border-white/20 text-blue-100 text-xl">
-                                <SparklesIcon className="w-6 h-6 text-blue-100" />
-                                {/* <span className="w-3 h-3 rounded-full bg-blue-100"></span> */}
-                                AI-Led Data Engineering
-                            </div>
-
-                            <div className={`  font-normal p-10 text-black bg-blue-100 h-90`}>
-                                AI-Led Data Engineering :
-
-                                We build scalable data pipelines that efficiently process large volumes of data. This enables faster analytics and AI-driven insights.
-
-                                <br />
-                                <br />
-
-                                Intelligent Data Processing :
-
-                                AI-powered tools help automate data preparation, integration, and transformation. This ensures accurate and real-time data availability.
-
-                                <br />
-                                <br />
-
-                                Modern Data Platforms :
-
-                                We design modern data architectures for analytics, machine learning, and business intelligence. These platforms unlock the full value of enterprise data.
-                            </div>
-
-                        </Card>
-
-                    </CardSwap>
+                    </div>
                 </div>
 
             </div>

@@ -111,7 +111,7 @@ export default function SuccessStories() {
                                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-transform duration-700 ease-in-out ">
 
                                             <div className="text-white tracking-wide inline-block bg-[#FF4700] px-3 py-2 md:px-7 md:py-3 rounded-md text-md transition font-normal cursor-pointer">
-                                                Know More
+                                                Know more
                                             </div>
 
                                         </div>
