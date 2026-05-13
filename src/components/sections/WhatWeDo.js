@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import CardSwap, { Card } from "@/components/CardSwap";
 import { BuildingOffice2Icon, ChartBarIcon, CodeBracketIcon, SparklesIcon } from "@heroicons/react/20/solid";
 
 const WhatWeDo = () => {
@@ -69,9 +68,9 @@ const WhatWeDo = () => {
                         </div>
 
                         {/* Card 2 */}
-                        <div className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.06] backdrop-blur-xl p-7 md:p-10 transition-all duration-500 hover:-translate-y-2 hover:border-blue-200/20 hover:bg-black/[0.9] hover:shadow-[0_20px_80px_rgba(29,78,216,0.15)]">
+                        <div className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.06] backdrop-blur-xl p-7 md:p-10  hover:-translate-y-2 hover:bg-gradient-to-br hover:from-white/10 hover:via-black hover:to-blue-800 hover:border-white/20 transition-all duration-500">
 
-                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_top_right,rgba(29,78,216,0.55),transparent_40%)]"></div>
+                            {/* <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_top_right,rgba(29,78,216,0.55),transparent_40%)]"></div> */}
 
                             {/* <div className="absolute top-6 right-6 text-white/10 text-5xl md:text-6xl font-light">
                                 02
@@ -99,9 +98,9 @@ const WhatWeDo = () => {
                         </div>
 
                         {/* Card 3 */}
-                        <div className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.06] backdrop-blur-xl p-7 md:p-10 transition-all duration-500 hover:-translate-y-2 hover:border-blue-200/20 hover:bg-black/[0.9] hover:shadow-[0_20px_80px_rgba(29,78,216,0.15)]">
+                        <div className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.06] backdrop-blur-xl p-7 md:p-10  hover:-translate-y-2 hover:bg-gradient-to-br hover:from-white/10 hover:via-black hover:to-blue-800 hover:border-white/20 transition-all duration-500">
 
-                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_top_right,rgba(29,78,216,0.55),transparent_40%)]"></div>
+                            {/* <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_top_right,rgba(29,78,216,0.55),transparent_40%)]"></div> */}
 
                             {/* <div className="absolute top-6 right-6 text-white/10 text-5xl md:text-6xl font-light">
                                 03
@@ -129,9 +128,9 @@ const WhatWeDo = () => {
                         </div>
 
                         {/* Card 4 */}
-                        <div className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.06] backdrop-blur-xl p-7 md:p-10 transition-all duration-500 hover:-translate-y-2 hover:border-blue-200/20 hover:bg-black/[0.9] hover:shadow-[0_20px_80px_rgba(29,78,216,0.15)]">
+                        <div className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.06] backdrop-blur-xl p-7 md:p-10  hover:-translate-y-2 hover:bg-gradient-to-br hover:from-white/10 hover:via-black hover:to-blue-800 hover:border-white/20 transition-all duration-500">
 
-                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_top_right,rgba(29,78,216,0.55),transparent_40%)]"></div>
+                            {/* <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_top_right,rgba(29,78,216,0.55),transparent_40%)]"></div> */}
 
                             {/* <div className="absolute top-6 right-6 text-white/10 text-5xl md:text-6xl font-light">
                                 04

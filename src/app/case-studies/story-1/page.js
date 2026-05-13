@@ -2,11 +2,6 @@
 
 import { motion } from "framer-motion";
 
- 
-
- 
-
-
 export default function StoryOne() {
     return (
         <section className="relative bg-gradient-to-r from-blue-100 via-white to-blue-100 w-full overflow-hidden">
@@ -26,9 +21,9 @@ export default function StoryOne() {
                 transition={{ duration: 2, ease: "easeOut" }}
                 className="hidden md:block absolute right-10 top-33 w-[330] opacity-90"
             />
-            <div className={`  max-w-6xl mx-auto px-6 py-25 md:py-30 md:ml-4 ml-0 `}>
+            <div className={`max-w-6xl mx-auto px-6 py-25 md:py-30 md:ml-4 ml-0 `}>
 
-                <h1 className={`  md:font-normal font-semibold text-black md:mb-8 mb-5 md:text-6xl text-3xl`}>
+                <h1 className={`md:font-normal font-semibold text-black md:mb-8 mb-5 md:text-6xl text-3xl`}>
                     Global Tariff Financial Modeling System
                 </h1>
 
@@ -44,12 +39,7 @@ export default function StoryOne() {
                     />
                 </div>
 
-
-
-
-
-                <h2 className={`  md:text-3xl text-xl mb-5 font-semibold`}>Business Need</h2>
-
+                <h2 className={`md:text-3xl text-xl mb-5 font-semibold`}>Business Need</h2>
 
                 <p className="md:text-lg text-sm text-gray-700 mb-8">
                     Global enterprises face significant challenges in managing tariff exposure across complex international trade networks, where over 60% of critical trade data resides in fragmented legacy systems. This lack of integration makes it difficult to gain a unified and accurate view of import and export duties.
@@ -115,9 +105,6 @@ export default function StoryOne() {
                     </p>
                 </div>
 
-
-
-
                 <h2 className={`  md:text-3xl text-xl mb-3 font-semibold mt-9`}>Solution</h2>
 
                 <p className={`  md:text-lg text-sm text-gray-700 mb-8`}>
@@ -143,7 +130,6 @@ export default function StoryOne() {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-
 
                     <div>
                         {/* Security & Governance */}
