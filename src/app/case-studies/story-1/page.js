@@ -124,7 +124,7 @@ export default function StoryOne() {
                             initial={{ opacity: 0, x: 80 }}
                             animate={{ opacity: 0.9, x: 0 }}
                             transition={{ duration: 1.5, ease: "easeOut" }}
-                            className="w-full max-w-[340px] ml-auto"
+                            className="w-full max-w-[340px] ml-auto rounded-md"
                         />
 
                         <div className="mt-8 max-w-[340px] ml-auto">
