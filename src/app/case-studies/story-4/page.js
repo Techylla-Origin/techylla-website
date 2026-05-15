@@ -28,7 +28,7 @@ export default function StoryFour() {
                         <div className="md:hidden mb-5">
                             <motion.img
                                 src="/CaseStudy-4-Img.png"
-                                alt="Case Study 4 Image"
+                                alt="Illustration of an AI-powered quality monitoring ecosystem"
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
@@ -114,7 +114,7 @@ export default function StoryFour() {
 
                         <motion.img
                             src="/CaseStudy-4-Img.png"
-                            alt="Tariff Simulation Illustration"
+                            alt="Illustration of an AI-powered quality monitoring ecosystem"
                             initial={{ opacity: 0, x: 80 }}
                             animate={{ opacity: 0.9, x: 0 }}
                             transition={{ duration: 1.5, ease: "easeOut" }}
